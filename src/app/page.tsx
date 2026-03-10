@@ -55,7 +55,7 @@ export default function Home() {
       name: 'UNO',
       description: '一致性合成数据链路',
       url: 'https://github.com/bytedance/UNO',
-      stars: 1300
+      stars: 1400
     },
     {
       name: 'USO',
@@ -67,19 +67,19 @@ export default function Home() {
       name: 'Humo',
       description: '多模态人物视频生成',
       url: 'https://github.com/phantom-video/humo',
-      stars: 1100
+      stars: 1200
     },
     {
       name: 'DreamID-V',
       description: '视频换脸',
       url: 'https://github.com/bytedance/DreamID-V',
-      stars: 460
+      stars: 563
     },
     {
       name: 'HyperLora',
       description: '图像ID lora优化',
       url: 'https://github.com/bytedance/ComfyUI-HyperLoRA',
-      stars: 400
+      stars: 486
     },
     {
       name: 'RealCustom',
@@ -91,13 +91,13 @@ export default function Home() {
       name: 'DreamID',
       description: '图片换脸',
       url: 'https://github.com/superhero-7/DreamID',
-      stars: 100
+      stars: 105
     },
     {
       name: 'I2VControl',
       description: '视频运动运镜控制通用方案',
       url: 'https://github.com/WanquanF/I2VControl-Camera',
-      stars: 100
+      stars: 114
     }
   ];
 

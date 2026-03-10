@@ -26,7 +26,7 @@ interface Paper {
   widelyApplied?: boolean;
 }
 
-const PAPERS_PER_PAGE = 10;
+const PAPERS_PER_PAGE = 9;
 
 export default function Home() {
   const [githubRepos, setGithubRepos] = useState<Map<string, GitHubRepo>>(new Map());
@@ -107,7 +107,6 @@ export default function Home() {
       authors: 'He Qian et al.',
       venue: 'CVPR',
       year: '2026',
-      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: false
     },
     {
@@ -115,7 +114,6 @@ export default function Home() {
       authors: 'He Qian et al.',
       venue: 'CVPR',
       year: '2026',
-      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: false
     },
     {
@@ -123,7 +121,6 @@ export default function Home() {
       authors: 'He Qian et al.',
       venue: 'CVPR',
       year: '2026',
-      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: true
     },
     {
@@ -131,7 +128,6 @@ export default function Home() {
       authors: 'He Qian et al.',
       venue: 'CVPR',
       year: '2026',
-      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: false
     },
     {
@@ -139,7 +135,6 @@ export default function Home() {
       authors: 'Cheng Yufeng Wu Wenxu Wu Shaojin Huang Mengqi Ding Fei He Qian',
       venue: 'CVPR',
       year: '2026',
-      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: false
     },
     {
@@ -147,7 +142,6 @@ export default function Home() {
       authors: 'Chen Zhuowei Li Bingchuan Ma Tianxiang Liu Lijie Liu Mingcong Zhang Yi Li Gen Li Xinghui Zhou Siyu He Qian',
       venue: 'ICLR',
       year: '2026',
-      arxiv: 'https://arxiv.org/abs/2506.18851',
       widelyApplied: true
     },
     {
@@ -155,7 +149,6 @@ export default function Home() {
       authors: 'Chen Liyang Ma Tianxiang Liu Jiawei Li Bingchuan Chen Zhuowei Liu Lijie He Xu Li Gen He Qian Wu Zhiyong',
       venue: 'AAAI',
       year: '2026',
-      arxiv: 'https://arxiv.org/abs/2509.08519',
       widelyApplied: true
     },
     {
@@ -171,7 +164,6 @@ export default function Home() {
       authors: 'He Qian et al.',
       venue: 'CVPR',
       year: '2025',
-      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: false
     },
     {
@@ -195,7 +187,6 @@ export default function Home() {
       authors: 'He Qian et al.',
       venue: 'CVPR',
       year: '2025',
-      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: false
     },
     {
@@ -211,7 +202,6 @@ export default function Home() {
       authors: 'He Qian et al.',
       venue: 'ICCV',
       year: '2025',
-      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: false
     },
     {
@@ -219,7 +209,6 @@ export default function Home() {
       authors: 'He Qian et al.',
       venue: 'ICCV',
       year: '2025',
-      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: false
     },
     {
@@ -235,7 +224,6 @@ export default function Home() {
       authors: 'Mou Chong Wu Yanze Wu Wenxu Guo Zinan Zhang Pengze Cheng Yufeng Luo Yiming Ding Fei Zhang Shiwen Li Xinghui',
       venue: 'SIGGRAPH Asia',
       year: '2025',
-      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: true
     },
     {
@@ -243,7 +231,6 @@ export default function Home() {
       authors: 'Li Xinghui Sun Qichao Zhang Pengze Ye Fulong Liao Zhichao Feng Wanquan Zhao Songtao Sun Mingzhen Hua Miao Zhang Pengze Li Xinghui He Qian Wu Xinglong',
       venue: 'SIGGRAPH Asia',
       year: '2025',
-      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: true
     },
     {
@@ -307,7 +294,6 @@ export default function Home() {
       authors: 'Ren Yuxi Wu Jie Zhang Peng Zhang Manlin Xiao Xuefeng He Qian Wang Rui Zheng Min Pan Xin',
       venue: 'ICCV',
       year: '2023',
-      arxiv: 'https://arxiv.org/abs/2410.06818',
       widelyApplied: false
     },
     {

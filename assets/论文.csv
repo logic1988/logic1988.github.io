@@ -1,0 +1,51 @@
+作者列表	论文	会议	论文pdf/链接	
+@华淼 @刘礼杰 @程紫阳 @何茜 @李冰川 @易子立 	Hua M, Liu L, Cheng Z, et al. FaceEraser: Removing Facial Parts for Augmented Reality[J]. ICCV workshop for AR/VR, 2021.	"Accepted to ICCV 
+workshop 2021"		
+@徐超 @华淼 @何茜 @易子立 	"Xu C, Hua M, He Q, et al.. Hierarchical Region-Aware High-Fidelity 
+Face Swapping. CVPR 2022."	"Accepted to 
+CVPR 2022"	https://openaccess.thecvf.com/content/CVPR2022/papers/Xu_Region-Aware_Face_Swapping_CVPR_2022_paper.pdf	
+@刘玮 @刘方越 @何茜 @丁飞 @易子立 	" Wei Liu, FangYue Liu, et al.. Self-Supervised Cross-Modal Meta-training for 
+ Few-Shot Font Generation. CVPR 2022."	"Accepted to 
+CVPR 2022"		
+@李冰川 @蔡少斐@刘玮 @张朋 @华淼 @何茜 @易子立 	DyStyle: Dynamic Neural Network for Multi-Attribute-Conditioned Style Editing	"Accepted to 
+WACV 2023"		
+@李冰川 @马天翔 @张朋 @华淼 @刘玮 @何茜 @易子立 	ReGANIE: Rectifying GAN Inversion Errors for Accurate Real Image Editing	"Accepted to 
+AAAI 2023"	https://arxiv.org/abs/2301.13402	
+@马天翔 @李冰川 @刘玮 @华淼 	CFFT-GAN: Cross-domain Feature Fusion Transformer for Exemplar-based Image Translation	"Accepted to 
+AAAI 2023"	https://arxiv.org/abs/2302.01608	
+@马天翔 @李冰川 @何茜 	Semantic3D: Semantic 3D-aware Image Synthesis and Manipulation Based on Compositional Neural Radiance Field	"Accepted to 
+AAAI 2023"	https://arxiv.org/abs/2302.01579	
+@刘佳伟@王卫宁 @刘玮 @何茜@刘静	ED-T2V: An Efficient Training Framework for Diffusion-based Text-to-Video Generation	"Accepted to 
+IJCNN 2023"	ED-T2V_ijcnn23.pdf 	
+@马天翔 @李冰川 @何茜 	GaFET: Learning Geometry-aware Facial Expression Translation from In-The-Wild Images	"Accepted to 
+ICCV 2023"	https://arxiv.org/abs/2308.03413v1	
+@任玉羲@吴捷@张朋@张曼琳@肖学锋@何茜@Rui Wang@郑敏@潘欣	UGC: Unified GAN Compression for Efficient Image-to-Image Translation	"Accepted to 
+ICCV 2023"	https://openaccess.thecvf.com/content/ICCV2023/html/Ren_UGC_Unified_GAN_Compression_for_Efficient_Image-to-Image_Translation_ICCV_2023_paper.html	
+@陈卓为 @方山城@刘玮 @何茜 @黄梦琪	DreamIdentity: Enhanced Editability for Efficient Face-identity Preserved Image Generation	"Accepted to 
+AAAI 2024"	"https://arxiv.org/abs/2307.00300
+"	
+@齐天浩, Shancheng Fang, @邬彦泽, Hongtao Xie, @刘佳伟, @陈朗, @何茜, Yongdong Zhang	DEADiff: An Efficient Stylization Diffusion Model with Disentangled Representations	Accepted to CVPR 2024	https://arxiv.org/abs/2403.06951	
+@黄梦琪 Zhendong Mao @刘明聪@何茜 Yongdong Zhang	RealCustom: Narrowing Real Text Word for Real-Time Open-Domain Text-to-Image Customization	Accepted to CVPR 2024	https://arxiv.org/pdf/2403.00483	
+@陈劲树 @李冰川 @华淼 @徐盼盼 @何茜	Customize Your Own Paired Data via Few-shot Way	"Accepted to 
+CVPR 2024 Workshop"	https://arxiv.org/pdf/2405.12490	
+@郭梓楠@邬彦泽@陈卓为@陈朗@张朋@何茜	PuLID: Pure and Lightning ID Customization via Contrastive Alignment	Accepted to NeurIPS 2024	https://arxiv.org/abs/2404.16022	
+Zhendong Mao @黄梦琪@丁飞@刘明聪@何茜 Yongdong Zhang	RealCustom++: Representing Images as Real Text Word for Real-Time Customization 		https://arxiv.org/abs/2408.09744	
+@冯万泉@刘佳伟@涂鹏琦@齐天浩@孙铭真@马天翔@赵松涛@周思宇@何茜	I2VControl-Camera: Precise Video Camera Control with Adjustable Motion Strength	ICLR 2025		
+@李梦天@陈劲树@冯万泉@李冰川@代斐@赵松涛@何茜	HyperLora: Parameter-Efficient Adaptive Generation for Portrait Synthesis	CVPR 2025		
+@李星辉@孙启超@冯万泉@叶福龙@张鹏泽zhichao liao @赵松涛 @何茜	AnyDressing: Customizable Multi-Garment Virtual Dressing via Latent Diffusion Models	CVPR 2025		
+@孙铭真@王卫宁@李根@刘佳伟@孙家辉@冯万泉@劳珊珊@周思宇@何茜@刘静	Asynchronous Video Generation with Autoregressive Diffusion	CVPR 2025		
+@齐天浩@袁建龙@冯万泉@方山城@刘佳伟@周思宇@何茜@谢洪涛@张勇东	Mask^2DiT: Dual Mask-based Diffusion Transformer for Multi-Scene Long Video Generation	CVPR 2025		
+@伍绍金@丁飞@黄梦琪@何茜	VMix: Improving Text-to-Image Diffusion Model with Cross-Attention Mixing Control		https://arxiv.org/abs/2412.20800	
+@冯万泉@齐天浩@刘佳伟@孙铭真@涂鹏琦@马天翔@代斐@赵松涛@周思宇@何茜	I2VControl: Disentangled and Unified Video Motion Synthesis Control	ICCV 2025		
+@伍绍金@黄梦琪@吴文绪@程宇锋@丁飞@何茜	Less-to-More Generalization: Unlocking More Controllability by In-Context Generation	ICCV 2025	https://arxiv.org/abs/2504.02160	
+@叶福龙@华淼@张鹏泽@李星辉@孙启超@赵松涛@何茜@吴兴龙	DreamID: A Fast and High-Fidelity diffusion-based Face Swapping via Triplet ID Group Learning	Siggraph Aisa 2025		
+@陈劲树@李冰川@Noodles @赵松涛@何茜	OneGT: One-Shot Geometry-Texture Neural Rendering for Head Avatars	ICCV 2025		
+@刘礼杰@马天翔@李冰川@陈卓为@刘佳伟@李根@周思宇@何茜@吴兴龙	Phantom: Subject-Consistent Video Generation via Cross-Modal Alignment	ICCV 2025	https://arxiv.org/abs/2502.11079	
+@牟冲 @邬彦泽 @张鹏泽@程宇锋@罗一鸣@丁飞 @李星辉 @李梦天 @刘明聪 @张义@伍绍金@赵松涛 @何茜 @吴兴龙	DreamO: A Unified Framework for Image Customization	SIGGRAPH Asia 2025	https://arxiv.org/abs/2504.16915	
+@陈礼扬@马天翔@刘佳伟@李冰川@陈卓为@刘礼杰 Xu He @李根@何茜 Zhiyong Wu	HuMo: Human-Centric Video Generation via Collaborative Multi-Modal Conditioning	AAAI 2026	https://arxiv.org/abs/2509.08519	
+@陈卓为@李冰川@马天翔 Lijie Liu, @刘明聪@张义@李根 lixinghui @陈礼扬@周思宇@何茜@吴兴龙	Phantom-Data: Towards a General Subject-Consistent Video Generation Dataset	ICLR 2026	https://arxiv.org/abs/2506.18851	
+@李梦天@陈劲树@赵松涛@冯万泉@涂鹏琦@何茜	DreamStyle: A Unified Framework for Video Stylization	CVPR 2026	https://arxiv.org/abs/2601.02785	
+@蔡泓锐@罗俊杰@扶智宏@朱圣楠@温佳伟@冯万泉@赵松涛@何茜	Scaling4D: Pushing the Frontier of Video Novel View Synthesis through Large-Scale Monocular Videos	CVPR 2026		
+@张鹏泽@邬彦泽 @李梦天@白须@赵松涛@叶福龙@牟冲 @李星辉 @陈卓为@何茜@高铭远	OmniTransfer: All-in-one Framework for Spatio-temporal Video Transfer	CVPR 2026	https://arxiv.org/abs/2601.14250	
+@伍绍金@黄梦琪@程宇锋@吴文绪@田家禾@罗一鸣@丁飞@何茜	Unified Customized Generation by Disentangled Reward Modeling	CVPR 2026	https://arxiv.org/abs/2508.18966	
+@程宇锋@吴文绪@伍绍金@黄梦琪@丁飞@何茜	Scaling Multi-Identity Consistency for Image Customization via Multi-to-Multi Matching Paradigm	CVPR 2026	https://arxiv.org/abs/2509.06818	

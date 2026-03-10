@@ -287,14 +287,14 @@ body {
   display: flex;
   gap: 12px;
   justify-content: center;
-  color: #6b7283;
+  color: #4c5363;
   font-size: 13px;
+  font-weight: 500;
 }
 
 .footer a {
   color: #4c5363;
   text-decoration: none;
-  font-weight: 500;
 }
 
 .footer a:hover { text-decoration: underline; }

@@ -497,7 +497,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr', gap: '20px' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '20px' }}>
         <section className="panel">
           <h2 className="panel-title">Open Source Projects</h2>
           <div className="repo-table-wrapper">
@@ -539,7 +539,7 @@ export default function Home() {
             letterSpacing: '1.6px',
             textTransform: 'uppercase',
             color: '#8a90a1',
-            paddingBottom: '8px',
+            padding: '10px 8px',
             borderBottom: '1px solid #e5e7ee'
           }}>
             For complete article list, see{' '}
@@ -563,6 +563,15 @@ export default function Home() {
                   <td>
                     <div className="title-line">
                       <span className="title">{paper.title}</span>
+                      {paper.widelyApplied && (
+                        <span className="badge" style={{ 
+                          backgroundColor: '#dcfce7', 
+                          borderColor: '#86efac', 
+                          color: '#166534' 
+                        }}>
+                          Widely Applied
+                        </span>
+                      )}
                       {paper.arxiv && (
                         <a 
                           href={paper.arxiv}
@@ -582,15 +591,6 @@ export default function Home() {
                         >
                           pdf
                         </a>
-                      )}
-                      {paper.widelyApplied && (
-                        <span className="badge" style={{ 
-                          backgroundColor: '#dcfce7', 
-                          borderColor: '#86efac', 
-                          color: '#166534' 
-                        }}>
-                          Widely Applied
-                        </span>
                       )}
                     </div>
                   </td>
@@ -616,11 +616,11 @@ export default function Home() {
       </div>
 
       <footer className="footer">
-        <a href="mailto:1988heqian@163.com" style={{ color: '#4c5363', textDecoration: 'none', fontWeight: 500 }}>
+        <a href="mailto:1988heqian@163.com">
           1988heqian@163.com
         </a>
         <span className="dot">•</span>
-        <span>© {new Date().getFullYear()} All rights reserved.</span>
+        <span style={{ fontWeight: 500 }}>© {new Date().getFullYear()} All rights reserved.</span>
       </footer>
     </div>
   );

@@ -23,6 +23,7 @@ interface Paper {
   venue: string;
   year: string;
   arxiv?: string;
+  pdf?: string;
   widelyApplied?: boolean;
 }
 
@@ -126,17 +127,19 @@ export default function Home() {
       widelyApplied: true
     },
     {
-      title: 'Unified Customized Generation by Disentangled Reward Modeling',
+      title: 'USO: Unified Style and Subject-Driven Generation via Disentangled and Reward Learning',
       authors: 'He Qian et al.',
       venue: 'CVPR',
       year: '2026',
+      arxiv: 'https://arxiv.org/abs/2508.18966',
       widelyApplied: false
     },
     {
-      title: 'Scaling Multi-Identity Consistency for Image Customization via Multi-to-Multi Matching Paradigm',
+      title: 'UMO: Scaling Multi-Identity Consistency for Image Customization via Matching Reward',
       authors: 'Cheng Yufeng Wu Wenxu Wu Shaojin Huang Mengqi Ding Fei He Qian',
       venue: 'CVPR',
       year: '2026',
+      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: false
     },
     {
@@ -180,11 +183,11 @@ export default function Home() {
       widelyApplied: false
     },
     {
-      title: 'Asynchronous Video Generation with Autoregressive Diffusion',
+      title: 'AR-Diffusion: Asynchronous Video Generation with Auto-Regressive Diffusion',
       authors: 'Sun Mingzhen Wang Weining Li Gen Liu Jiawei Sun Jiahui Feng Wanquan Lao Shanshan Zhou SiYu He Qian Liu Jing',
       venue: 'CVPR',
       year: '2025',
-      arxiv: 'https://arxiv.org/abs/2410.16184',
+      arxiv: 'https://arxiv.org/abs/2503.07418',
       widelyApplied: false
     },
     {
@@ -192,6 +195,7 @@ export default function Home() {
       authors: 'He Qian et al.',
       venue: 'CVPR',
       year: '2025',
+      arxiv: 'https://arxiv.org/abs/2503.19881',
       widelyApplied: false
     },
     {
@@ -215,6 +219,7 @@ export default function Home() {
       authors: 'He Qian et al.',
       venue: 'ICCV',
       year: '2025',
+      pdf: 'https://openaccess.thecvf.com/content/ICCV2025/papers/Chen_OneGT_One-Shot_Geometry-Texture_Neural_Rendering_for_Head_Avatars_ICCV_2025_paper.pdf',
       widelyApplied: false
     },
     {
@@ -554,6 +559,16 @@ export default function Home() {
                           className="arxiv"
                         >
                           arXiv
+                        </a>
+                      )}
+                      {paper.pdf && (
+                        <a 
+                          href={paper.pdf}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="arxiv"
+                        >
+                          pdf
                         </a>
                       )}
                       {paper.widelyApplied && (

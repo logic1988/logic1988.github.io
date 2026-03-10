@@ -497,7 +497,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '20px' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr', gap: '20px' }}>
         <section className="panel">
           <h2 className="panel-title">Open Source Projects</h2>
           <div className="repo-table-wrapper">
@@ -533,13 +533,21 @@ export default function Home() {
           <h2 className="panel-title">
             Publications
           </h2>
-          <div style={{ marginBottom: '16px', fontSize: '13px', color: '#6b7283' }}>
-            完整文章列表见{' '}
+          <div style={{ 
+            marginBottom: '16px', 
+            fontSize: '11px', 
+            letterSpacing: '1.6px',
+            textTransform: 'uppercase',
+            color: '#8a90a1',
+            paddingBottom: '8px',
+            borderBottom: '1px solid #e5e7ee'
+          }}>
+            For complete article list, see{' '}
             <a 
               href="https://scholar.google.com/citations?hl=zh-CN&user=9rWWCgUAAAAJ&view_op=list_works&sortby=pubdate"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: '#2f6bff', textDecoration: 'none', fontWeight: 500 }}
+              style={{ color: '#8a90a1', textDecoration: 'none', fontWeight: 600 }}
             >
               Google Scholar
             </a>

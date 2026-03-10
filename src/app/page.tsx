@@ -259,7 +259,7 @@ export default function Home() {
       authors: 'Huang Mengqi Mao Zhendong Liu Mingcong He Qian Zhang Yongdong',
       venue: 'CVPR',
       year: '2024',
-      arxiv: 'https://arxiv.org/abs/2405.04741',
+      arxiv: 'https://arxiv.org/abs/2403.00483',
       widelyApplied: false
     },
     {
@@ -275,7 +275,7 @@ export default function Home() {
       authors: 'Chen Zhuowei Fang Shancheng Liu Wei He Qian Huang Mengqi Mao Zhendong Zhang Yongdong',
       venue: 'AAAI',
       year: '2024',
-      arxiv: 'https://arxiv.org/abs/2405.09889',
+      arxiv: 'https://arxiv.org/abs/2307.00300',
       widelyApplied: false
     },
     {

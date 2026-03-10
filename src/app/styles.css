@@ -32,7 +32,7 @@ body {
 
 .hero h1 {
   font-family: 'Fraunces', serif;
-  font-size: clamp(38px, 5vw, 64px);
+  font-size: clamp(30px, 4vw, 51px);
   margin: 10px 0 12px;
   letter-spacing: -0.5px;
   color: var(--ink);

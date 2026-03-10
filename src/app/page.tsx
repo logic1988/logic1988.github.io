@@ -474,7 +474,7 @@ export default function Home() {
   return (
     <div className="page">
       <header className="hero">
-        <h1><span style={{ fontWeight: 400 }}>HE</span> <span style={{ fontWeight: 400, marginLeft: '4px' }}>QIAN</span></h1>
+        <h1><span style={{ fontWeight: 300 }}>HE</span> <span style={{ fontWeight: 300, marginLeft: '4px' }}>QIAN</span></h1>
       </header>
 
       <section className="stats">

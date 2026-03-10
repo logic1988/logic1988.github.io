@@ -23,10 +23,11 @@ interface Paper {
   venue: string;
   year: string;
   arxiv?: string;
+  widelyApplied?: boolean;
 }
 
-const PROJECTS_PER_PAGE = 5;
-const PAPERS_PER_PAGE = 5;
+const PROJECTS_PER_PAGE = 6;
+const PAPERS_PER_PAGE = 10;
 
 export default function Home() {
   const [githubRepos, setGithubRepos] = useState<Map<string, GitHubRepo>>(new Map());
@@ -104,107 +105,266 @@ export default function Home() {
 
   const basePapers: Paper[] = [
     {
-      title: 'Phantom: Subject-consistent video generation via cross-modal alignment',
-      authors: 'Liu, Lijie; Ma, Tianxiang; Li, Bingchuan; Chen, Zhuowei; et al.',
-      venue: 'ICCV',
-      year: '2025',
-      arxiv: 'https://arxiv.org/abs/2410.05592'
-    },
-    {
-      title: 'I2vcontrol: Disentangled and unified video motion synthesis control',
-      authors: 'Feng, Wanquan; Qi, Tianhao; Liu, Jiawei; Sun, Mingzhen; et al.',
-      venue: 'ICCV',
-      year: '2025',
-      arxiv: 'https://arxiv.org/abs/2410.08455'
-    },
-    {
-      title: 'Dreamid: High-fidelity and fast diffusion-based face swapping via triplet id group learning',
-      authors: 'Li, Xinghui; Sun, Qichao; Zhang, Pengze; Ye, Fulong; et al.',
-      venue: 'SIGGRAPH Asia',
-      year: '2025'
-    },
-    {
-      title: 'Dreamo: A unified framework for image customization',
-      authors: 'Mou, Chong; Wu, Yanze; Wu, Wenxu; Guo, Zinan; et al.',
-      venue: 'SIGGRAPH Asia',
-      year: '2025'
-    },
-    {
-      title: 'Realcustom: Narrowing real text word for real-time open-domain text-to-image customization',
-      authors: 'Huang, Mengqi; Mao, Zhendong; Liu, Mingcong; He, Qian; et al.',
+      title: 'DreamStyle: A Unified Framework for Video Stylization',
+      authors: 'He, Qian; et al.',
       venue: 'CVPR',
-      year: '2024',
-      arxiv: 'https://arxiv.org/abs/2405.04741'
+      year: '2026',
+      widelyApplied: false
     },
     {
-      title: 'Deadiff: An efficient stylization diffusion model with disentangled representations',
-      authors: 'Qi, Tianhao; Fang, Shancheng; Wu, Yanze; Xie, Hongtao; et al.',
+      title: 'Scaling4D: Pushing the Frontier of Video Novel View Synthesis through Large-Scale Monocular Videos',
+      authors: 'He, Qian; et al.',
       venue: 'CVPR',
-      year: '2024',
-      arxiv: 'https://arxiv.org/abs/2403.14798'
+      year: '2026',
+      widelyApplied: false
     },
     {
-      title: 'Dreamidentity: Enhanced editability for efficient face-identity preserved image generation',
-      authors: 'Chen, Zhuowei; Fang, Shancheng; Liu, Wei; He, Qian; et al.',
+      title: 'OmniTransfer: All-in-one Framework for Spatio-temporal Video Transfer',
+      authors: 'He, Qian; et al.',
+      venue: 'CVPR',
+      year: '2026',
+      widelyApplied: false
+    },
+    {
+      title: 'Unified Customized Generation by Disentangled Reward Modeling',
+      authors: 'He, Qian; et al.',
+      venue: 'CVPR',
+      year: '2026',
+      widelyApplied: false
+    },
+    {
+      title: 'Scaling Multi-Identity Consistency for Image Customization via Multi-to-Multi Matching Paradigm',
+      authors: 'Cheng, Yufeng; Wu, Wenxu; Wu, Shaojin; Huang, Mengqi; Ding, Fei; He, Qian;',
+      venue: 'CVPR',
+      year: '2026',
+      widelyApplied: false
+    },
+    {
+      title: 'Phantom-Data: Towards a General Subject-Consistent Video Generation Dataset',
+      authors: 'Chen, Zhuowei; Li, Bingchuan; Ma, Tianxiang; Liu, Lijie; Liu, Mingcong; Zhang, Yi; Li, Gen; Li, Xinghui; Zhou, Siyu; He, Qian;',
+      venue: 'ICLR',
+      year: '2026',
+      widelyApplied: false
+    },
+    {
+      title: 'HuMo: Human-Centric Video Generation via Collaborative Multi-Modal Conditioning',
+      authors: 'Chen, Liyang; Ma, Tianxiang; Liu, Jiawei; Li, Bingchuan; Chen, Zhuowei; Liu, Lijie; He, Xu; Li, Gen; He, Qian; Wu, Zhiyong;',
       venue: 'AAAI',
-      year: '2024',
-      arxiv: 'https://arxiv.org/abs/2405.09889'
+      year: '2026',
+      widelyApplied: false
     },
     {
-      title: 'Pulid: Pure and lightning id customization via contrastive alignment',
-      authors: 'Guo, Zinan; Wu, Yanze; Zhuowei, Chen; Zhang, Peng; et al.',
+      title: 'I2VControl-Camera: Precise Video Camera Control with Adjustable Motion Strength',
+      authors: 'Feng, Wanquan; Liu, Jiawei; Tu, Pengqi; Qi, Tianhao; Sun, Mingzhen; Ma, Tianxiang; Zhao, Songtao; Zhou, Siyu; He, Qian;',
+      venue: 'ICLR',
+      year: '2025',
+      widelyApplied: false
+    },
+    {
+      title: 'HyperLora: Parameter-Efficient Adaptive Generation for Portrait Synthesis',
+      authors: 'He, Qian; et al.',
+      venue: 'CVPR',
+      year: '2025',
+      widelyApplied: false
+    },
+    {
+      title: 'AnyDressing: Customizable Multi-Garment Virtual Dressing via Latent Diffusion Models',
+      authors: 'Li, Xinghui; Sun, Qichao; Zhang, Pengze; Ye, Fulong; Liao, Zhichao; Feng, Wanquan; Zhao, Songtao; He, Qian;',
+      venue: 'CVPR',
+      year: '2025',
+      arxiv: 'https://arxiv.org/abs/2411.15667',
+      widelyApplied: false
+    },
+    {
+      title: 'Asynchronous Video Generation with Autoregressive Diffusion',
+      authors: 'Sun, Mingzhen; Wang, Weining; Li, Gen; Liu, Jiawei; Sun, Jiahui; Feng, Wanquan; Lao, Shanshan; Zhou, SiYu; He, Qian; Liu, Jing;',
+      venue: 'CVPR',
+      year: '2025',
+      arxiv: 'https://arxiv.org/abs/2410.16184',
+      widelyApplied: false
+    },
+    {
+      title: 'Mask^2DiT: Dual Mask-based Diffusion Transformer for Multi-Scene Long Video Generation',
+      authors: 'He, Qian; et al.',
+      venue: 'CVPR',
+      year: '2025',
+      widelyApplied: false
+    },
+    {
+      title: 'I2VControl: Disentangled and Unified Video Motion Synthesis Control',
+      authors: 'Feng, Wanquan; Qi, Tianhao; Liu, Jiawei; Sun, Mingzhen; Tu, Pengqi; Ma, Tianxiang; Dai, Fei; Zhao, Songtao; Zhou, Siyu; He, Qian;',
+      venue: 'ICCV',
+      year: '2025',
+      arxiv: 'https://arxiv.org/abs/2410.08455',
+      widelyApplied: true
+    },
+    {
+      title: 'Less-to-More Generalization: Unlocking More Controllability by In-Context Generation',
+      authors: 'He, Qian; et al.',
+      venue: 'ICCV',
+      year: '2025',
+      widelyApplied: false
+    },
+    {
+      title: 'OneGT: One-Shot Geometry-Texture Neural Rendering for Head Avatars',
+      authors: 'He, Qian; et al.',
+      venue: 'ICCV',
+      year: '2025',
+      widelyApplied: false
+    },
+    {
+      title: 'Phantom: Subject-Consistent Video Generation via Cross-Modal Alignment',
+      authors: 'Liu, Lijie; Ma, Tianxiang; Li, Bingchuan; Chen, Zhuowei; Liu, Jiawei; Li, Gen; Zhou, Siyu; He, Qian; Wu, Xinglong;',
+      venue: 'ICCV',
+      year: '2025',
+      arxiv: 'https://arxiv.org/abs/2410.05592',
+      widelyApplied: true
+    },
+    {
+      title: 'DreamO: A Unified Framework for Image Customization',
+      authors: 'Mou, Chong; Wu, Yanze; Wu, Wenxu; Guo, Zinan; Zhang, Pengze; Cheng, Yufeng; Luo, Yiming; Ding, Fei; Zhang, Shiwen; Li, Xinghui;',
+      venue: 'SIGGRAPH Asia',
+      year: '2025',
+      widelyApplied: true
+    },
+    {
+      title: 'DreamID: A Fast and High-Fidelity diffusion-based Face Swapping via Triplet ID Group Learning',
+      authors: 'Li, Xinghui; Sun, Qichao; Zhang, Pengze; Ye, Fulong; Liao, Zhichao; Feng, Wanquan; Zhao, Songtao; Sun, Mingzhen; Hua, Miao; Zhang, Pengze; Li, Xinghui; He, Qian; Wu, Xinglong;',
+      venue: 'SIGGRAPH Asia',
+      year: '2025',
+      widelyApplied: true
+    },
+    {
+      title: 'Pulid: Pure and Lightning ID Customization via Contrastive Alignment',
+      authors: 'Guo, Zinan; Wu, Yanze; Zhuowei, Chen; Zhang, Peng; He, Qian;',
       venue: 'NeurIPS',
       year: '2024',
-      arxiv: 'https://arxiv.org/abs/2404.16028'
+      arxiv: 'https://arxiv.org/abs/2404.16028',
+      widelyApplied: true
     },
     {
-      title: 'Ar-diffusion: Asynchronous video generation with auto-regressive diffusion',
-      authors: 'Sun, Mingzhen; Wang, Weining; Li, Gen; Liu, Jiawei; et al.',
+      title: 'RealCustom: Narrowing Real Text Word for Real-Time Open-Domain Text-to-Image Customization',
+      authors: 'Huang, Mengqi; Mao, Zhendong; Liu, Mingcong; He, Qian; Zhang, Yongdong;',
       venue: 'CVPR',
-      year: '2025',
-      arxiv: 'https://arxiv.org/abs/2410.16184'
+      year: '2024',
+      arxiv: 'https://arxiv.org/abs/2405.04741',
+      widelyApplied: false
     },
     {
-      title: 'Anydressing: Customizable multi-garment virtual dressing via latent diffusion models',
-      authors: 'Li, Xinghui; Sun, Qichao; Zhang, Pengze; Ye, Fulong; et al.',
+      title: 'Deadiff: An Efficient Stylization Diffusion Model with Disentangled Representations',
+      authors: 'Qi, Tianhao; Fang, Shancheng; Wu, Yanze; Xie, Hongtao; Liu, Jiawei; Chen, Lang; He, Qian; Zhang, Yongdong;',
       venue: 'CVPR',
-      year: '2025',
-      arxiv: 'https://arxiv.org/abs/2411.15667'
+      year: '2024',
+      arxiv: 'https://arxiv.org/abs/2403.14798',
+      widelyApplied: false
     },
     {
-      title: 'Reganie: Rectifying gan inversion errors for accurate real image editing',
-      authors: 'Li, Bingchuan; Ma, Tianxiang; Zhang, Peng; Hua, Miao; et al.',
+      title: 'DreamIdentity: Enhanced Editability for Efficient Face-identity Preserved Image Generation',
+      authors: 'Chen, Zhuowei; Fang, Shancheng; Liu, Wei; He, Qian; Huang, Mengqi; Mao, Zhendong; Zhang, Yongdong;',
+      venue: 'AAAI',
+      year: '2024',
+      arxiv: 'https://arxiv.org/abs/2405.09889',
+      widelyApplied: false
+    },
+    {
+      title: 'Customize Your Own Paired Data via Few-shot Way',
+      authors: 'Chen, Jinshu; Li, Bingchuan; Hua, Miao; Xu, Panpan; He, Qian;',
+      venue: 'CVPR Workshop',
+      year: '2024',
+      widelyApplied: false
+    },
+    {
+      title: 'RealCustom++: Representing Images as Real Text Word for Real-Time Customization',
+      authors: 'Mao, Zhendong; Huang, Mengqi; Ding, Fei; Liu, Mingcong; He, Qian; Zhang, Yongdong;',
+      venue: 'arXiv',
+      year: '2024',
+      arxiv: 'https://arxiv.org/abs/2408.09744',
+      widelyApplied: false
+    },
+    {
+      title: 'UGC: Unified GAN Compression for Efficient Image-to-Image Translation',
+      authors: 'Ren, Yuxi; Wu, Jie; Zhang, Peng; Zhang, Manlin; Xiao, Xuefeng; He, Qian; Wang, Rui; Zheng, Min; Pan, Xin;',
+      venue: 'ICCV',
+      year: '2023',
+      widelyApplied: false
+    },
+    {
+      title: 'GaFET: Learning Geometry-aware Facial Expression Translation from In-The-Wild Images',
+      authors: 'Ma, Tianxiang; Li, Bingchuan; He, Qian; Dong, Jing; Tan, Tieniu;',
+      venue: 'ICCV',
+      year: '2023',
+      arxiv: 'https://arxiv.org/abs/2308.03413',
+      widelyApplied: false
+    },
+    {
+      title: 'ED-T2V: An Efficient Training Framework for Diffusion-based Text-to-Video Generation',
+      authors: 'Liu, Jiawei; Wang, Weining; Liu, Wei; He, Qian; Liu, Jing;',
+      venue: 'IJCNN',
+      year: '2023',
+      widelyApplied: false
+    },
+    {
+      title: 'Semantic3D: Semantic 3D-aware Image Synthesis and Manipulation Based on Compositional Neural Radiance Field',
+      authors: 'Ma, Tianxiang; Li, Bingchuan; He, Qian; Dong, Jing; Tan, Tieniu;',
       venue: 'AAAI',
       year: '2023',
-      arxiv: 'https://arxiv.org/abs/2303.02994'
+      arxiv: 'https://arxiv.org/abs/2302.14163',
+      widelyApplied: false
     },
     {
-      title: 'Semantic 3d-aware portrait synthesis and manipulation based on compositional neural radiance field',
-      authors: 'Ma, Tianxiang; Li, Bingchuan; He, Qian; Dong, Jing; et al.',
+      title: 'ReGANIE: Rectifying GAN Inversion Errors for Accurate Real Image Editing',
+      authors: 'Li, Bingchuan; Ma, Tianxiang; Zhang, Peng; Hua, Miao; Liu, Wei; He, Qian; Yi, Zili;',
       venue: 'AAAI',
       year: '2023',
-      arxiv: 'https://arxiv.org/abs/2302.14163'
+      arxiv: 'https://arxiv.org/abs/2303.02994',
+      widelyApplied: false
     },
     {
-      title: 'Region-aware face swapping',
-      authors: 'Xu, Chao; Zhang, Jiangning; Hua, Miao; He, Qian; et al.',
-      venue: 'CVPR',
-      year: '2022',
-      arxiv: 'https://arxiv.org/abs/2203.13218'
+      title: 'CFFT-GAN: Cross-domain Feature Fusion Transformer for Exemplar-based Image Translation',
+      authors: 'He, Qian; et al.',
+      venue: 'AAAI',
+      year: '2023',
+      widelyApplied: false
     },
     {
-      title: 'Xmp-font: Self-supervised cross-modality pre-training for few-shot font generation',
-      authors: 'Liu, Wei; Liu, Fangyue; Ding, Fei; He, Qian; et al.',
-      venue: 'CVPR',
-      year: '2022',
-      arxiv: 'https://arxiv.org/abs/2203.08012'
-    },
-    {
-      title: 'DyStyle: Dynamic neural network for multi-attribute-conditioned style editings',
-      authors: 'Li, Bingchuan; Cai, Shaofei; Liu, Wei; Zhang, Peng; et al.',
+      title: 'DyStyle: Dynamic Neural Network for Multi-Attribute-Conditioned Style Editings',
+      authors: 'Li, Bingchuan; Cai, Shaofei; Liu, Wei; Zhang, Peng; He, Qian; Hua, Miao; Liu, Wei; Yi, Zili;',
       venue: 'WACV',
       year: '2023',
-      arxiv: 'https://arxiv.org/abs/2210.07476'
+      arxiv: 'https://arxiv.org/abs/2210.07476',
+      widelyApplied: false
+    },
+    {
+      title: 'Hierarchical Region-Aware High-Fidelity Face Swapping',
+      authors: 'Xu, Chao; Hua, Miao; He, Qian; et al.',
+      venue: 'CVPR',
+      year: '2022',
+      arxiv: 'https://arxiv.org/abs/2203.13218',
+      widelyApplied: false
+    },
+    {
+      title: 'Self-Supervised Cross-Modal Meta-training for Few-Shot Font Generation',
+      authors: 'Wei Liu, FangYue Liu, et al.',
+      venue: 'CVPR',
+      year: '2022',
+      arxiv: 'https://arxiv.org/abs/2203.08012',
+      widelyApplied: false
+    },
+    {
+      title: 'FaceEraser: Removing Facial Parts for Augmented Reality',
+      authors: 'Hua, Miao; Liu, Lijie; Cheng, Ziyang; He, Qian; Li, Bingchuan; Yi, Zili;',
+      venue: 'ICCV Workshop',
+      year: '2021',
+      arxiv: 'https://arxiv.org/abs/2109.10760',
+      widelyApplied: false
+    },
+    {
+      title: 'VMix: Improving Text-to-Image Diffusion Model with Cross-Attention Mixing Control',
+      authors: 'Wu, Shaojin; Ding, Fei; Huang, Mengqi; Liu, Wei; He, Qian;',
+      venue: 'arXiv',
+      year: '2024',
+      arxiv: 'https://arxiv.org/abs/2412.20800',
+      widelyApplied: true
     }
   ];
 
@@ -214,14 +374,19 @@ export default function Home() {
     'ICCV': 2,
     'NeurIPS': 3,
     'ICML': 4,
-    'AAAI': 5,
-    'IJCAI': 6,
-    'SIGGRAPH': 7,
-    'SIGGRAPH Asia': 8,
-    'WACV': 9,
+    'ICLR': 5,
+    'AAAI': 6,
+    'IJCAI': 7,
+    'SIGGRAPH': 8,
+    'SIGGRAPH Asia': 9,
+    'WACV': 10,
+    'IJCNN': 11,
+    'CVPR Workshop': 12,
+    'ICCV Workshop': 13,
+    'arXiv': 14,
   };
 
-  // Sort papers: by venue rank (higher priority first), then by year (newer first)
+  // Sort papers: by venue rank (higher priority first), then by year (newer first), then by widelyApplied (true first)
   const sortedPapers = [...basePapers].sort((a, b) => {
     const rankA = venueRank[a.venue] || 100;
     const rankB = venueRank[b.venue] || 100;
@@ -231,7 +396,14 @@ export default function Home() {
     }
     
     // Same venue, sort by year descending
-    return parseInt(b.year) - parseInt(a.year);
+    const yearA = parseInt(a.year);
+    const yearB = parseInt(b.year);
+    if (yearA !== yearB) {
+      return yearB - yearA;
+    }
+    
+    // Same venue and year, sort by widelyApplied (true first)
+    return (b.widelyApplied ? 1 : 0) - (a.widelyApplied ? 1 : 0);
   });
 
   useEffect(() => {
@@ -310,8 +482,8 @@ export default function Home() {
           <div className="card-value">11</div>
         </div>
         <div className="card">
-          <div className="card-title">Research Focus</div>
-          <div className="card-value" style={{ fontSize: '24px', marginTop: '14px' }}>AI & CV</div>
+          <div className="card-title">Publications</div>
+          <div className="card-value">30+</div>
         </div>
         <div className="card">
           <div className="card-title">Organization</div>
@@ -319,111 +491,126 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Open Source Projects */}
-      <section className="panel" style={{ marginBottom: '20px' }}>
-        <h2 className="panel-title">Open Source Projects</h2>
-        <div className="repo-table-wrapper">
-          <table className="repo-table">
-            <thead>
-              <tr>
-                <th>Project</th>
-                <th>Description</th>
-                <th style={{ textAlign: 'right' }}>Stars</th>
-              </tr>
-            </thead>
+      {/* Two Column Layout */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '20px' }}>
+        {/* Left Column: Open Source Projects */}
+        <section className="panel">
+          <h2 className="panel-title">Open Source Projects</h2>
+          <div className="repo-table-wrapper">
+            <table className="repo-table">
+              <thead>
+                <tr>
+                  <th>Project</th>
+                  <th>Stars</th>
+                </tr>
+              </thead>
+              <tbody>
+                {displayedProjects.map((project, index) => (
+                  <tr key={index}>
+                    <td>
+                      <div className="repo-link">
+                        <a href={project.url} target="_blank" rel="noopener noreferrer">
+                          {project.name}
+                        </a>
+                      </div>
+                      <div className="repo-desc">{project.description}</div>
+                    </td>
+                    <td className="repo-stars">
+                      {typeof getProjectStars(project) === 'number' 
+                        ? getProjectStars(project).toLocaleString() 
+                        : getProjectStars(project)}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Projects Pagination */}
+          {totalProjectsPages > 1 && (
+            <div className="pagination">
+              {Array.from({ length: totalProjectsPages }, (_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setProjectsPage(i + 1)}
+                  className={`page-btn ${projectsPage === i + 1 ? 'active' : ''}`}
+                >
+                  {i + 1}
+                </button>
+              ))}
+            </div>
+          )}
+        </section>
+
+        {/* Right Column: Publications */}
+        <section className="panel">
+          <h2 className="panel-title">Publications</h2>
+          <div className="subtitle" style={{ marginTop: 0, marginBottom: '16px' }}>
+            Selected publications. For a complete list, please visit my{' '}
+            <a 
+              href="https://scholar.google.com/citations?hl=zh-CN&user=9rWWCgUAAAAJ&view_op=list_works&sortby=pubdate"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: '#2f6bff', textDecoration: 'none', fontWeight: 600 }}
+            >
+              Google Scholar
+            </a>
+            {' '}profile.
+          </div>
+          <table className="paper-table">
             <tbody>
-              {displayedProjects.map((project, index) => (
+              {displayedPapers.map((paper, index) => (
                 <tr key={index}>
-                  <td className="repo-link">
-                    <a href={project.url} target="_blank" rel="noopener noreferrer">
-                      {project.name}
-                    </a>
+                  <td style={{ paddingRight: '16px', width: '70px' }}>
+                    <div className="year" style={{ marginBottom: '4px' }}>{paper.year}</div>
+                    <div className="badge" style={{ display: 'inline-block' }}>{paper.venue}</div>
                   </td>
-                  <td className="repo-desc">{project.description}</td>
-                  <td className="repo-stars">
-                    {typeof getProjectStars(project) === 'number' 
-                      ? getProjectStars(project).toLocaleString() 
-                      : getProjectStars(project)}
+                  <td>
+                    <div className="title-line">
+                      <span className="title">{paper.title}</span>
+                      {paper.arxiv && (
+                        <a 
+                          href={paper.arxiv}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="arxiv"
+                        >
+                          arXiv
+                        </a>
+                      )}
+                      {paper.widelyApplied && (
+                        <span className="badge" style={{ 
+                          backgroundColor: '#dcfce7', 
+                          borderColor: '#86efac', 
+                          color: '#166534' 
+                        }}>
+                          Widely Applied
+                        </span>
+                      )}
+                    </div>
+                    <div className="meta" style={{ fontSize: '11px' }}>{paper.authors}</div>
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
-        </div>
 
-        {/* Projects Pagination */}
-        {totalProjectsPages > 1 && (
-          <div className="pagination">
-            {Array.from({ length: totalProjectsPages }, (_, i) => (
-              <button
-                key={i}
-                onClick={() => setProjectsPage(i + 1)}
-                className={`page-btn ${projectsPage === i + 1 ? 'active' : ''}`}
-              >
-                {i + 1}
-              </button>
-            ))}
-          </div>
-        )}
-      </section>
-
-      {/* Research Papers */}
-      <section className="panel">
-        <h2 className="panel-title">Publications</h2>
-        <div className="subtitle" style={{ marginTop: 0, marginBottom: '16px' }}>
-          Selected publications. For a complete list, please visit my{' '}
-          <a 
-            href="https://scholar.google.com/citations?hl=zh-CN&user=9rWWCgUAAAAJ&view_op=list_works&sortby=pubdate"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: '#2f6bff', textDecoration: 'none', fontWeight: 600 }}
-          >
-            Google Scholar
-          </a>
-          {' '}profile.
-        </div>
-        <table className="paper-table">
-          <tbody>
-            {displayedPapers.map((paper, index) => (
-              <tr key={index}>
-                <td style={{ paddingRight: '16px' }} className="year">{paper.year}</td>
-                <td>
-                  <div className="title-line">
-                    <span className="title">{paper.title}</span>
-                    {paper.arxiv && (
-                      <a 
-                        href={paper.arxiv}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="arxiv"
-                      >
-                        arXiv
-                      </a>
-                    )}
-                  </div>
-                  <div className="meta">{paper.authors}</div>
-                  <div className="meta">{paper.venue}</div>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-
-        {/* Papers Pagination */}
-        {totalPapersPages > 1 && (
-          <div className="pagination">
-            {Array.from({ length: totalPapersPages }, (_, i) => (
-              <button
-                key={i}
-                onClick={() => setPapersPage(i + 1)}
-                className={`page-btn ${papersPage === i + 1 ? 'active' : ''}`}
-              >
-                {i + 1}
-              </button>
-            ))}
-          </div>
-        )}
-      </section>
+          {/* Papers Pagination */}
+          {totalPapersPages > 1 && (
+            <div className="pagination">
+              {Array.from({ length: totalPapersPages }, (_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setPapersPage(i + 1)}
+                  className={`page-btn ${papersPage === i + 1 ? 'active' : ''}`}
+                >
+                  {i + 1}
+                </button>
+              ))}
+            </div>
+          )}
+        </section>
+      </div>
 
       {/* Footer */}
       <footer className="footer">

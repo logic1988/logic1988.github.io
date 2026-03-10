@@ -124,7 +124,7 @@ export default function Home() {
       venue: 'CVPR',
       year: '2026',
       arxiv: 'https://arxiv.org/abs/2509.06818',
-      widelyApplied: false
+      widelyApplied: true
     },
     {
       title: 'Unified Customized Generation by Disentangled Reward Modeling',
@@ -467,7 +467,7 @@ export default function Home() {
   return (
     <div className="page">
       <header className="hero">
-        <h1><span style={{ fontWeight: 700 }}>Qian</span> HE</h1>
+        <h1><span style={{ fontWeight: 600 }}>HE</span> Qian</h1>
       </header>
 
       <section className="stats">
@@ -487,11 +487,6 @@ export default function Home() {
           <div className="card-title">Publications</div>
           <div className="card-value">{sortedPapers.length}</div>
           <div className="card-note">from 2021-2026</div>
-        </div>
-        <div className="card" style={{ '--accent': '#8b5cf6' } as React.CSSProperties}>
-          <div className="card-title">Organization</div>
-          <div className="card-value" style={{ fontSize: '24px', marginTop: '14px' }}>ByteDance</div>
-          <div className="card-note" style={{ marginTop: '8px' }}>Lab</div>
         </div>
       </section>
 
@@ -529,18 +524,6 @@ export default function Home() {
 
         <section className="panel">
           <h2 className="panel-title">Publications</h2>
-          <div className="subtitle" style={{ marginTop: 0, marginBottom: '16px' }}>
-            Selected publications. For a complete list, please visit my{' '}
-            <a 
-              href="https://scholar.google.com/citations?hl=zh-CN&user=9rWWCgUAAAAJ&view_op=list_works&sortby=pubdate"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: '#2f6bff', textDecoration: 'none', fontWeight: 600 }}
-            >
-              Google Scholar
-            </a>
-            {' '}profile.
-          </div>
           <table className="paper-table">
             <tbody>
               {displayedPapers.map((paper, index) => (
@@ -572,7 +555,6 @@ export default function Home() {
                         </span>
                       )}
                     </div>
-                    <div className="meta" style={{ fontSize: '11px' }}>{paper.authors}</div>
                   </td>
                 </tr>
               ))}

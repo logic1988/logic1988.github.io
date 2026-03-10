@@ -453,8 +453,8 @@ export default function Home() {
   const sortedProjects = [...baseProjects].sort((a, b) => {
     const starsA = getProjectStars(a);
     const starsB = getProjectStars(b);
-    const numA = typeof starsA === 'string' ? parseFloat(starsA) * (starsA.includes('k') ? 1000 : 1) : starsA;
-    const numB = typeof starsB === 'string' ? parseFloat(starsB) * (starsB.includes('k') ? 1000 : 1) : starsB;
+    const numA = typeof starsA === 'string' ? parseFloat(starsA.replace('+', '')) * (starsA.includes('k') ? 1000 : 1) : starsA;
+    const numB = typeof starsB === 'string' ? parseFloat(starsB.replace('+', '')) * (starsB.includes('k') ? 1000 : 1) : starsB;
     return numB - numA;
   });
 
@@ -478,7 +478,10 @@ export default function Home() {
           <div className="card-value">
             {sortedProjects.reduce((sum, p) => {
               const stars = getProjectStars(p);
-              return sum + (typeof stars === 'number' ? stars : 0);
+              const numStars = typeof stars === 'string' 
+                ? parseFloat(stars.replace('+', '')) * (stars.includes('k') ? 1000 : 1) 
+                : stars;
+              return sum + numStars;
             }, 0).toLocaleString()}
           </div>
           <div className="card-note">as of {currentDate}</div>

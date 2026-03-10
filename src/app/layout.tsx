@@ -26,7 +26,6 @@ export const metadata: Metadata = {
     title: 'HE Qian\'s Profile',
     description:
       'HE Qian - Focus on Visual and Multimodal Generation and AI Applications.',
-    url: 'https://logic1988.github.io',
     siteName: 'HE Qian\'s Profile',
     locale: 'en_US',
     type: 'website',

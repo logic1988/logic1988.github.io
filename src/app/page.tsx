@@ -107,6 +107,7 @@ export default function Home() {
       authors: 'He Qian et al.',
       venue: 'CVPR',
       year: '2026',
+      arxiv: 'https://arxiv.org/abs/2601.02785',
       widelyApplied: false
     },
     {
@@ -121,6 +122,7 @@ export default function Home() {
       authors: 'He Qian et al.',
       venue: 'CVPR',
       year: '2026',
+      arxiv: 'https://arxiv.org/abs/2601.14250',
       widelyApplied: true
     },
     {
@@ -142,6 +144,7 @@ export default function Home() {
       authors: 'Chen Zhuowei Li Bingchuan Ma Tianxiang Liu Lijie Liu Mingcong Zhang Yi Li Gen Li Xinghui Zhou Siyu He Qian',
       venue: 'ICLR',
       year: '2026',
+      arxiv: 'https://arxiv.org/abs/2506.18851',
       widelyApplied: true
     },
     {
@@ -149,6 +152,7 @@ export default function Home() {
       authors: 'Chen Liyang Ma Tianxiang Liu Jiawei Li Bingchuan Chen Zhuowei Liu Lijie He Xu Li Gen He Qian Wu Zhiyong',
       venue: 'AAAI',
       year: '2026',
+      arxiv: 'https://arxiv.org/abs/2509.08519',
       widelyApplied: true
     },
     {
@@ -164,6 +168,7 @@ export default function Home() {
       authors: 'He Qian et al.',
       venue: 'CVPR',
       year: '2025',
+      arxiv: 'https://arxiv.org/abs/2503.16944',
       widelyApplied: false
     },
     {
@@ -171,7 +176,7 @@ export default function Home() {
       authors: 'Li Xinghui Sun Qichao Zhang Pengze Ye Fulong Liao Zhichao Feng Wanquan Zhao Songtao He Qian',
       venue: 'CVPR',
       year: '2025',
-      arxiv: 'https://arxiv.org/abs/2411.15667',
+      arxiv: 'https://arxiv.org/abs/2412.04146',
       widelyApplied: false
     },
     {
@@ -194,7 +199,7 @@ export default function Home() {
       authors: 'Feng Wanquan Qi Tianhao Liu Jiawei Sun Mingzhen Tu Pengqi Ma Tianxiang Dai Fei Zhao Songtao Zhou Siyu He Qian',
       venue: 'ICCV',
       year: '2025',
-      arxiv: 'https://arxiv.org/abs/2410.08455',
+      arxiv: 'https://arxiv.org/abs/2411.17765',
       widelyApplied: true
     },
     {
@@ -202,6 +207,7 @@ export default function Home() {
       authors: 'He Qian et al.',
       venue: 'ICCV',
       year: '2025',
+      arxiv: 'https://arxiv.org/abs/2504.02160',
       widelyApplied: false
     },
     {
@@ -216,7 +222,7 @@ export default function Home() {
       authors: 'Liu Lijie Ma Tianxiang Li Bingchuan Chen Zhuowei Liu Jiawei Li Gen Zhou Siyu He Qian Wu Xinglong',
       venue: 'ICCV',
       year: '2025',
-      arxiv: 'https://arxiv.org/abs/2410.05592',
+      arxiv: 'https://arxiv.org/abs/2502.11079',
       widelyApplied: true
     },
     {
@@ -224,6 +230,7 @@ export default function Home() {
       authors: 'Mou Chong Wu Yanze Wu Wenxu Guo Zinan Zhang Pengze Cheng Yufeng Luo Yiming Ding Fei Zhang Shiwen Li Xinghui',
       venue: 'SIGGRAPH Asia',
       year: '2025',
+      arxiv: 'https://arxiv.org/abs/2504.16915',
       widelyApplied: true
     },
     {
@@ -231,14 +238,15 @@ export default function Home() {
       authors: 'Li Xinghui Sun Qichao Zhang Pengze Ye Fulong Liao Zhichao Feng Wanquan Zhao Songtao Sun Mingzhen Hua Miao Zhang Pengze Li Xinghui He Qian Wu Xinglong',
       venue: 'SIGGRAPH Asia',
       year: '2025',
+      arxiv: 'https://arxiv.org/abs/2504.14509',
       widelyApplied: true
     },
     {
-      title: 'Pulid: Pure and Lightning ID Customization via Contrastive Alignment',
+      title: 'PuLID: Pure and Lightning ID Customization via Contrastive Alignment',
       authors: 'Guo Zinan Wu Yanze Zhuowei Chen Zhang Peng He Qian',
       venue: 'NeurIPS',
       year: '2024',
-      arxiv: 'https://arxiv.org/abs/2404.16028',
+      arxiv: 'https://arxiv.org/abs/2404.16022',
       widelyApplied: true
     },
     {
@@ -254,7 +262,7 @@ export default function Home() {
       authors: 'Qi Tianhao Fang Shancheng Wu Yanze Xie Hongtao Liu Jiawei Chen Lang He Qian Zhang Yongdong',
       venue: 'CVPR',
       year: '2024',
-      arxiv: 'https://arxiv.org/abs/2403.14798',
+      arxiv: 'https://arxiv.org/abs/2403.06951',
       widelyApplied: false
     },
     {

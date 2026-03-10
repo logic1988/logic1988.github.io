@@ -14,7 +14,7 @@ interface Project {
   name: string;
   description: string;
   url: string;
-  stars?: string | number;
+  stars: number;
 }
 
 interface Paper {
@@ -35,69 +35,69 @@ export default function Home() {
   const baseProjects: Project[] = [
     {
       name: 'PuLID',
-      description: '人物ID保持插件, Flux 上开源最优',
+      description: '人物ID保持插件',
       url: 'https://github.com/ToTheBeginning/PuLID',
-      stars: '3.5k'
+      stars: 3500
     },
     {
       name: 'DreamO',
-      description: '图像一致性模型flux版本',
+      description: '图像一致性模型',
       url: 'https://github.com/bytedance/DreamO',
-      stars: '1.7k'
+      stars: 1700
     },
     {
       name: 'Phantom',
-      description: '视频一致性 Wanx1.3b版本',
+      description: '视频一致性',
       url: 'https://github.com/Phantom-video/Phantom',
-      stars: '1.5k'
+      stars: 1500
     },
     {
       name: 'UNO',
-      description: '一致性合成数据链路flux版本',
+      description: '一致性合成数据链路',
       url: 'https://github.com/bytedance/UNO',
-      stars: '1.3k'
+      stars: 1300
     },
     {
       name: 'USO',
       description: '风格化+主体一致性生成',
       url: 'https://github.com/bytedance/USO',
-      stars: '1.2k'
+      stars: 1200
     },
     {
       name: 'Humo',
       description: '多模态人物视频生成',
       url: 'https://github.com/phantom-video/humo',
-      stars: '1.1k'
+      stars: 1100
     },
     {
       name: 'DreamID-V',
       description: '视频换脸',
       url: 'https://github.com/bytedance/DreamID-V',
-      stars: '460'
+      stars: 460
     },
     {
       name: 'HyperLora',
       description: '图像ID lora优化',
       url: 'https://github.com/bytedance/ComfyUI-HyperLoRA',
-      stars: '400+'
+      stars: 400
     },
     {
       name: 'RealCustom',
-      description: 'IP保持XL版本',
+      description: 'IP保持',
       url: 'https://github.com/bytedance/RealCustom',
-      stars: '100'
+      stars: 100
     },
     {
       name: 'DreamID',
-      description: '图片换脸最强效果',
+      description: '图片换脸',
       url: 'https://github.com/superhero-7/DreamID',
-      stars: '100'
+      stars: 100
     },
     {
       name: 'I2VControl',
       description: '视频运动运镜控制通用方案',
       url: 'https://github.com/WanquanF/I2VControl-Camera',
-      stars: '100'
+      stars: 100
     }
   ];
 
@@ -442,20 +442,18 @@ export default function Home() {
     }
   }, []);
 
-  const getProjectStars = (project: Project): number | string => {
+  const getProjectStars = (project: Project): number => {
     const repo = githubRepos.get(project.url);
     if (repo) {
       return repo.stars;
     }
-    return project.stars || 0;
+    return typeof project.stars === 'number' ? project.stars : 0;
   };
 
   const sortedProjects = [...baseProjects].sort((a, b) => {
     const starsA = getProjectStars(a);
     const starsB = getProjectStars(b);
-    const numA = typeof starsA === 'string' ? parseFloat(starsA.replace('+', '')) * (starsA.includes('k') ? 1000 : 1) : starsA;
-    const numB = typeof starsB === 'string' ? parseFloat(starsB.replace('+', '')) * (starsB.includes('k') ? 1000 : 1) : starsB;
-    return numB - numA;
+    return starsB - starsA;
   });
 
   const totalPapersPages = Math.ceil(sortedPapers.length / PAPERS_PER_PAGE);
@@ -476,13 +474,7 @@ export default function Home() {
         <div className="card" style={{ '--accent': '#3b82f6' } as React.CSSProperties}>
           <div className="card-title">GitHub Stars</div>
           <div className="card-value">
-            {sortedProjects.reduce((sum, p) => {
-              const stars = getProjectStars(p);
-              const numStars = typeof stars === 'string' 
-                ? parseFloat(stars.replace('+', '')) * (stars.includes('k') ? 1000 : 1) 
-                : stars;
-              return sum + numStars;
-            }, 0).toLocaleString()}
+            {sortedProjects.reduce((sum, p) => sum + getProjectStars(p), 0).toLocaleString()}
           </div>
           <div className="card-note">as of {currentDate}</div>
         </div>
@@ -526,9 +518,7 @@ export default function Home() {
                       <div className="repo-desc">{project.description}</div>
                     </td>
                     <td className="repo-stars">
-                      {typeof getProjectStars(project) === 'number' 
-                        ? getProjectStars(project).toLocaleString() 
-                        : getProjectStars(project)}
+                      {getProjectStars(project).toLocaleString()}
                     </td>
                   </tr>
                 ))}

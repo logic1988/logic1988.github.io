@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import './styles.css';
 
 interface GitHubRepo {
   url: string;
@@ -292,179 +293,142 @@ export default function Home() {
   );
 
   return (
-    <div className="min-h-screen bg-white">
-      <div className="max-w-4xl mx-auto px-6 py-12">
-        {/* Header */}
-        <header className="mb-16">
-          <h1 className="text-4xl font-light tracking-wide mb-2">
-            <span className="font-medium">Qian</span> HE
-          </h1>
-        </header>
+    <div className="page">
+      {/* Header */}
+      <header className="hero">
+        <h1><span style={{ fontWeight: 700 }}>Qian</span> HE</h1>
+      </header>
 
-        {/* Statistics */}
-        <section className="mb-16">
-          <h2 className="text-lg font-medium mb-6">Overview</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div>
-              <p className="text-sm text-gray-500 mb-1">GitHub Stars</p>
-              <p className="text-3xl font-light">9,940+</p>
-            </div>
-            <div>
-              <p className="text-sm text-gray-500 mb-1">Projects</p>
-              <p className="text-3xl font-light">11</p>
-            </div>
-            <div>
-              <p className="text-sm text-gray-500 mb-1">Research Focus</p>
-              <p className="text-sm font-light text-gray-700">AI & CV</p>
-            </div>
-            <div>
-              <p className="text-sm text-gray-500 mb-1">Organization</p>
-              <p className="text-sm font-light text-gray-700">ByteDance</p>
-            </div>
-          </div>
-        </section>
+      {/* Statistics */}
+      <section className="stats">
+        <div className="card">
+          <div className="card-title">GitHub Stars</div>
+          <div className="card-value">9,940+</div>
+        </div>
+        <div className="card">
+          <div className="card-title">Projects</div>
+          <div className="card-value">11</div>
+        </div>
+        <div className="card">
+          <div className="card-title">Research Focus</div>
+          <div className="card-value" style={{ fontSize: '24px', marginTop: '14px' }}>AI & CV</div>
+        </div>
+        <div className="card">
+          <div className="card-title">Organization</div>
+          <div className="card-value" style={{ fontSize: '24px', marginTop: '14px' }}>ByteDance</div>
+        </div>
+      </section>
 
-        {/* Open Source Projects */}
-        <section className="mb-16" id="repositories">
-          <h2 className="text-lg font-medium mb-6">
-            <a href="#repositories" className="text-gray-800 hover:text-gray-600">
-              Open Source Projects
-            </a>
-          </h2>
-          <div className="border-t pt-6">
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b">
-                    <th className="text-left py-3 px-2 font-medium text-gray-700">Project</th>
-                    <th className="text-left py-3 px-2 font-medium text-gray-700">Description</th>
-                    <th className="text-right py-3 px-2 font-medium text-gray-700">Stars</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {displayedProjects.map((project, index) => (
-                    <tr 
-                      key={index} 
-                      className={`border-b hover:bg-gray-50 ${index === displayedProjects.length - 1 && projectsPage === totalProjectsPages ? 'border-b-0' : ''}`}
-                    >
-                      <td className="py-3 px-2">
-                        <a 
-                          href={project.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-blue-600 hover:underline font-medium"
-                        >
-                          {project.name}
-                        </a>
-                      </td>
-                      <td className="py-3 px-2 text-gray-600">
-                        {project.description}
-                      </td>
-                      <td className="py-3 px-2 text-right font-medium">
-                        {typeof getProjectStars(project) === 'number' 
-                          ? getProjectStars(project).toLocaleString() 
-                          : getProjectStars(project)}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+      {/* Open Source Projects */}
+      <section className="panel" style={{ marginBottom: '20px' }}>
+        <h2 className="panel-title">Open Source Projects</h2>
+        <div className="repo-table-wrapper">
+          <table className="repo-table">
+            <thead>
+              <tr>
+                <th>Project</th>
+                <th>Description</th>
+                <th style={{ textAlign: 'right' }}>Stars</th>
+              </tr>
+            </thead>
+            <tbody>
+              {displayedProjects.map((project, index) => (
+                <tr key={index}>
+                  <td className="repo-link">
+                    <a href={project.url} target="_blank" rel="noopener noreferrer">
+                      {project.name}
+                    </a>
+                  </td>
+                  <td className="repo-desc">{project.description}</td>
+                  <td className="repo-stars">
+                    {typeof getProjectStars(project) === 'number' 
+                      ? getProjectStars(project).toLocaleString() 
+                      : getProjectStars(project)}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
 
-            {/* Projects Pagination */}
-            {totalProjectsPages > 1 && (
-              <div className="mt-6 flex justify-center gap-2">
-                {Array.from({ length: totalProjectsPages }, (_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => setProjectsPage(i + 1)}
-                    className={`px-4 py-2 rounded text-sm ${
-                      projectsPage === i + 1
-                        ? 'bg-blue-600 text-white'
-                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                    }`}
-                  >
-                    {i + 1}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-        </section>
-
-        {/* Research Papers */}
-        <section className="mb-16" id="papers">
-          <h2 className="text-lg font-medium mb-6">
-            <a href="#papers" className="text-gray-800 hover:text-gray-600">
-              Publications
-            </a>
-          </h2>
-          <div className="border-t pt-6">
-            <p className="text-gray-600 mb-6">
-              Selected publications. For a complete list, please visit my{' '}
-              <a 
-                href="https://scholar.google.com/citations?hl=zh-CN&user=9rWWCgUAAAAJ&view_op=list_works&sortby=pubdate"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
+        {/* Projects Pagination */}
+        {totalProjectsPages > 1 && (
+          <div className="pagination">
+            {Array.from({ length: totalProjectsPages }, (_, i) => (
+              <button
+                key={i}
+                onClick={() => setProjectsPage(i + 1)}
+                className={`page-btn ${projectsPage === i + 1 ? 'active' : ''}`}
               >
-                Google Scholar
-              </a>
-              {' '}profile.
-            </p>
-            <div className="space-y-6">
-              {displayedPapers.map((paper, index) => (
-                <div key={index} className={`pb-6 ${index < displayedPapers.length - 1 || papersPage < totalPapersPages ? 'border-b' : ''}`}>
-                  <h3 className="font-medium text-gray-900 mb-2">
-                    {paper.title}
+                {i + 1}
+              </button>
+            ))}
+          </div>
+        )}
+      </section>
+
+      {/* Research Papers */}
+      <section className="panel">
+        <h2 className="panel-title">Publications</h2>
+        <div className="subtitle" style={{ marginTop: 0, marginBottom: '16px' }}>
+          Selected publications. For a complete list, please visit my{' '}
+          <a 
+            href="https://scholar.google.com/citations?hl=zh-CN&user=9rWWCgUAAAAJ&view_op=list_works&sortby=pubdate"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: '#2f6bff', textDecoration: 'none', fontWeight: 600 }}
+          >
+            Google Scholar
+          </a>
+          {' '}profile.
+        </div>
+        <table className="paper-table">
+          <tbody>
+            {displayedPapers.map((paper, index) => (
+              <tr key={index}>
+                <td style={{ paddingRight: '16px' }} className="year">{paper.year}</td>
+                <td>
+                  <div className="title-line">
+                    <span className="title">{paper.title}</span>
                     {paper.arxiv && (
                       <a 
                         href={paper.arxiv}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="ml-2 text-sm text-blue-600 hover:underline"
+                        className="arxiv"
                       >
-                        [arXiv]
+                        arXiv
                       </a>
                     )}
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-1">
-                    {paper.authors}
-                  </p>
-                  <p className="text-sm text-blue-600">
-                    {paper.venue}
-                    <span className="text-gray-500"> • {paper.year}</span>
-                  </p>
-                </div>
-              ))}
-            </div>
+                  </div>
+                  <div className="meta">{paper.authors}</div>
+                  <div className="meta">{paper.venue}</div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
 
-            {/* Papers Pagination */}
-            {totalPapersPages > 1 && (
-              <div className="mt-6 flex justify-center gap-2">
-                {Array.from({ length: totalPapersPages }, (_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => setPapersPage(i + 1)}
-                    className={`px-4 py-2 rounded text-sm ${
-                      papersPage === i + 1
-                        ? 'bg-blue-600 text-white'
-                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                    }`}
-                  >
-                    {i + 1}
-                  </button>
-                ))}
-              </div>
-            )}
+        {/* Papers Pagination */}
+        {totalPapersPages > 1 && (
+          <div className="pagination">
+            {Array.from({ length: totalPapersPages }, (_, i) => (
+              <button
+                key={i}
+                onClick={() => setPapersPage(i + 1)}
+                className={`page-btn ${papersPage === i + 1 ? 'active' : ''}`}
+              >
+                {i + 1}
+              </button>
+            ))}
           </div>
-        </section>
+        )}
+      </section>
 
-        {/* Footer */}
-        <footer className="pt-8 border-t text-sm text-gray-500">
-          <p>© {new Date().getFullYear()} All rights reserved.</p>
-        </footer>
-      </div>
+      {/* Footer */}
+      <footer className="footer">
+        <span>© {new Date().getFullYear()} All rights reserved.</span>
+      </footer>
     </div>
   );
 }

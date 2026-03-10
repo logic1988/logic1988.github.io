@@ -15,9 +15,8 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // 用户主页模式（username.github.io），无需 assetPrefix
-  // 如果使用项目页面模式（username.github.io/repo），取消注释并修改
-  // assetPrefix: process.env.NODE_ENV === 'production' ? '/your-repo-name' : '',
+  // 项目页面模式（username.github.io/repo），需要 assetPrefix
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/github.io' : '',
   allowedDevOrigins: ['*.dev.coze.site'],
 };
 

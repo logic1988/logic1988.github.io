@@ -42,7 +42,7 @@ export default function Home() {
     {
       name: 'DreamO',
       description: '图像一致性模型flux版本',
-      url: 'https://github.com/ToTheBeginning/DreamO',
+      url: 'https://github.com/bytedance/DreamO',
       stars: '1.7k'
     },
     {
@@ -54,13 +54,13 @@ export default function Home() {
     {
       name: 'UNO',
       description: '一致性合成数据链路flux版本',
-      url: 'https://github.com/ToTheBeginning/UNO',
+      url: 'https://github.com/bytedance/UNO',
       stars: '1.3k'
     },
     {
       name: 'USO',
       description: '风格化+主体一致性生成',
-      url: 'https://github.com/ToTheBeginning/USO',
+      url: 'https://github.com/bytedance/USO',
       stars: '1.2k'
     },
     {
@@ -72,31 +72,31 @@ export default function Home() {
     {
       name: 'DreamID-V',
       description: '视频换脸',
-      url: 'https://github.com/ToTheBeginning/DreamID-V',
+      url: 'https://github.com/bytedance/DreamID-V',
       stars: '460'
     },
     {
       name: 'HyperLora',
       description: '图像ID lora优化',
-      url: 'https://github.com/ToTheBeginning/HyperLoRA',
+      url: 'https://github.com/bytedance/ComfyUI-HyperLoRA',
       stars: '400+'
     },
     {
       name: 'RealCustom',
       description: 'IP保持XL版本',
-      url: 'https://github.com/ToTheBeginning/RealCustom',
+      url: 'https://github.com/bytedance/RealCustom',
       stars: '100'
     },
     {
       name: 'DreamID',
       description: '图片换脸最强效果',
-      url: 'https://github.com/ToTheBeginning/DreamID',
+      url: 'https://github.com/superhero-7/DreamID',
       stars: '100'
     },
     {
       name: 'I2VControl',
       description: '视频运动运镜控制通用方案',
-      url: 'https://github.com/WanquanF/I2VControl',
+      url: 'https://github.com/WanquanF/I2VControl-Camera',
       stars: '100'
     }
   ];

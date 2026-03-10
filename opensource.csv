@@ -1,0 +1,12 @@
+name,description,url,stars
+PuLID,人物ID保持插件,https://github.com/ToTheBeginning/PuLID,3500
+DreamO,图像一致性,https://github.com/bytedance/DreamO,1700
+Phantom,视频一致性,https://github.com/Phantom-video/Phantom,1500
+UNO,一致性合成数据链路,https://github.com/bytedance/UNO,1400
+USO,风格化一致性生成,https://github.com/bytedance/USO,1200
+Humo,多模态人物视频生成,https://github.com/phantom-video/humo,1200
+DreamID-V,视频换脸,https://github.com/bytedance/DreamID-V,563
+HyperLora,图像ID lora优化,https://github.com/bytedance/ComfyUI-HyperLoRA,486
+RealCustom,IP保持,https://github.com/bytedance/RealCustom,100
+DreamID,图片换脸,https://github.com/superhero-7/DreamID,105
+I2VControl,视频运动运镜控制,https://github.com/WanquanF/I2VControl-Camera,114

@@ -26,12 +26,10 @@ interface Paper {
   widelyApplied?: boolean;
 }
 
-const PROJECTS_PER_PAGE = 6;
 const PAPERS_PER_PAGE = 10;
 
 export default function Home() {
   const [githubRepos, setGithubRepos] = useState<Map<string, GitHubRepo>>(new Map());
-  const [projectsPage, setProjectsPage] = useState(1);
   const [papersPage, setPapersPage] = useState(1);
 
   const baseProjects: Project[] = [
@@ -282,6 +280,14 @@ export default function Home() {
       widelyApplied: false
     },
     {
+      title: 'VMix: Improving Text-to-Image Diffusion Model with Cross-Attention Mixing Control',
+      authors: 'Wu, Shaojin; Ding, Fei; Huang, Mengqi; Liu, Wei; He, Qian;',
+      venue: 'arXiv',
+      year: '2024',
+      arxiv: 'https://arxiv.org/abs/2412.20800',
+      widelyApplied: true
+    },
+    {
       title: 'UGC: Unified GAN Compression for Efficient Image-to-Image Translation',
       authors: 'Ren, Yuxi; Wu, Jie; Zhang, Peng; Zhang, Manlin; Xiao, Xuefeng; He, Qian; Wang, Rui; Zheng, Min; Pan, Xin;',
       venue: 'ICCV',
@@ -357,53 +363,44 @@ export default function Home() {
       year: '2021',
       arxiv: 'https://arxiv.org/abs/2109.10760',
       widelyApplied: false
-    },
-    {
-      title: 'VMix: Improving Text-to-Image Diffusion Model with Cross-Attention Mixing Control',
-      authors: 'Wu, Shaojin; Ding, Fei; Huang, Mengqi; Liu, Wei; He, Qian;',
-      venue: 'arXiv',
-      year: '2024',
-      arxiv: 'https://arxiv.org/abs/2412.20800',
-      widelyApplied: true
     }
   ];
 
-  // Top conferences ranking for sorting
-  const venueRank: { [key: string]: number } = {
-    'CVPR': 1,
-    'ICCV': 2,
-    'NeurIPS': 3,
-    'ICML': 4,
-    'ICLR': 5,
-    'AAAI': 6,
-    'IJCAI': 7,
-    'SIGGRAPH': 8,
-    'SIGGRAPH Asia': 9,
-    'WACV': 10,
-    'IJCNN': 11,
-    'CVPR Workshop': 12,
-    'ICCV Workshop': 13,
-    'arXiv': 14,
-  };
-
-  // Sort papers: by venue rank (higher priority first), then by year (newer first), then by widelyApplied (true first)
+  // Sort papers: year descending > 2 tags > 1 tag (with Scale) > 0 tags
   const sortedPapers = [...basePapers].sort((a, b) => {
-    const rankA = venueRank[a.venue] || 100;
-    const rankB = venueRank[b.venue] || 100;
-    
-    if (rankA !== rankB) {
-      return rankA - rankB;
-    }
-    
-    // Same venue, sort by year descending
+    // First sort by year descending
     const yearA = parseInt(a.year);
     const yearB = parseInt(b.year);
     if (yearA !== yearB) {
       return yearB - yearA;
     }
-    
-    // Same venue and year, sort by widelyApplied (true first)
-    return (b.widelyApplied ? 1 : 0) - (a.widelyApplied ? 1 : 0);
+
+    // Count tags (venue + arxiv + widelyApplied)
+    const getTagCount = (paper: Paper) => {
+      let count = 1; // venue always present
+      if (paper.arxiv) count++;
+      if (paper.widelyApplied) count++;
+      return count;
+    };
+
+    const tagsA = getTagCount(a);
+    const tagsB = getTagCount(b);
+
+    if (tagsA !== tagsB) {
+      return tagsB - tagsA; // more tags first
+    }
+
+    // Same number of tags, prefer Scale (CVPR/ICCV/NeurIPS/ICLR) first
+    const isScaleVenue = (venue: string) => ['CVPR', 'ICCV', 'NeurIPS', 'ICLR', 'AAAI'].includes(venue);
+    const isScaleA = isScaleVenue(a.venue);
+    const isScaleB = isScaleVenue(b.venue);
+
+    if (isScaleA !== isScaleB) {
+      return isScaleA ? -1 : 1;
+    }
+
+    // All else equal, keep original order
+    return 0;
   });
 
   useEffect(() => {
@@ -450,15 +447,8 @@ export default function Home() {
     return numB - numA;
   });
 
-  // Pagination
-  const totalProjectsPages = Math.ceil(sortedProjects.length / PROJECTS_PER_PAGE);
+  // Papers pagination
   const totalPapersPages = Math.ceil(sortedPapers.length / PAPERS_PER_PAGE);
-
-  const displayedProjects = sortedProjects.slice(
-    (projectsPage - 1) * PROJECTS_PER_PAGE,
-    projectsPage * PROJECTS_PER_PAGE
-  );
-
   const displayedPapers = sortedPapers.slice(
     (papersPage - 1) * PAPERS_PER_PAGE,
     papersPage * PAPERS_PER_PAGE
@@ -473,19 +463,19 @@ export default function Home() {
 
       {/* Statistics */}
       <section className="stats">
-        <div className="card">
+        <div className="card" style={{ '--accent': '#3b82f6' } as React.CSSProperties}>
           <div className="card-title">GitHub Stars</div>
           <div className="card-value">9,940+</div>
         </div>
-        <div className="card">
+        <div className="card" style={{ '--accent': '#10b981' } as React.CSSProperties}>
           <div className="card-title">Projects</div>
           <div className="card-value">11</div>
         </div>
-        <div className="card">
+        <div className="card" style={{ '--accent': '#f97316' } as React.CSSProperties}>
           <div className="card-title">Publications</div>
           <div className="card-value">30+</div>
         </div>
-        <div className="card">
+        <div className="card" style={{ '--accent': '#8b5cf6' } as React.CSSProperties}>
           <div className="card-title">Organization</div>
           <div className="card-value" style={{ fontSize: '24px', marginTop: '14px' }}>ByteDance</div>
         </div>
@@ -505,7 +495,7 @@ export default function Home() {
                 </tr>
               </thead>
               <tbody>
-                {displayedProjects.map((project, index) => (
+                {sortedProjects.map((project, index) => (
                   <tr key={index}>
                     <td>
                       <div className="repo-link">
@@ -525,21 +515,6 @@ export default function Home() {
               </tbody>
             </table>
           </div>
-
-          {/* Projects Pagination */}
-          {totalProjectsPages > 1 && (
-            <div className="pagination">
-              {Array.from({ length: totalProjectsPages }, (_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setProjectsPage(i + 1)}
-                  className={`page-btn ${projectsPage === i + 1 ? 'active' : ''}`}
-                >
-                  {i + 1}
-                </button>
-              ))}
-            </div>
-          )}
         </section>
 
         {/* Right Column: Publications */}
@@ -612,8 +587,12 @@ export default function Home() {
         </section>
       </div>
 
-      {/* Footer */}
+      {/* Footer with Contact */}
       <footer className="footer">
+        <a href="mailto:1988heqian@163.com" style={{ color: '#4c5363', textDecoration: 'none', fontWeight: 500 }}>
+          1988heqian@163.com
+        </a>
+        <span className="dot">•</span>
         <span>© {new Date().getFullYear()} All rights reserved.</span>
       </footer>
     </div>

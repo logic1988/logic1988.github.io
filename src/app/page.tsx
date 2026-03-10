@@ -1,4 +1,97 @@
 export default function Home() {
+  const papers = [
+    {
+      title: 'Phantom: Subject-consistent video generation via cross-modal alignment',
+      authors: 'Liu, Lijie; Ma, Tianxiang; Li, Bingchuan; Chen, Zhuowei; et al.',
+      venue: 'ICCV 2025',
+      year: '2025'
+    },
+    {
+      title: 'I2vcontrol: Disentangled and unified video motion synthesis control',
+      authors: 'Feng, Wanquan; Qi, Tianhao; Liu, Jiawei; Sun, Mingzhen; et al.',
+      venue: 'ICCV 2025',
+      year: '2025'
+    },
+    {
+      title: 'Dreamid: High-fidelity and fast diffusion-based face swapping via triplet id group learning',
+      authors: 'Li, Xinghui; Sun, Qichao; Zhang, Pengze; Ye, Fulong; et al.',
+      venue: 'SIGGRAPH Asia 2025',
+      year: '2025'
+    },
+    {
+      title: 'Dreamo: A unified framework for image customization',
+      authors: 'Mou, Chong; Wu, Yanze; Wu, Wenxu; Guo, Zinan; et al.',
+      venue: 'SIGGRAPH Asia 2025',
+      year: '2025'
+    },
+    {
+      title: 'Realcustom: Narrowing real text word for real-time open-domain text-to-image customization',
+      authors: 'Huang, Mengqi; Mao, Zhendong; Liu, Mingcong; He, Qian; et al.',
+      venue: 'CVPR 2024',
+      year: '2024'
+    },
+    {
+      title: 'Deadiff: An efficient stylization diffusion model with disentangled representations',
+      authors: 'Qi, Tianhao; Fang, Shancheng; Wu, Yanze; Xie, Hongtao; et al.',
+      venue: 'CVPR 2024',
+      year: '2024'
+    },
+    {
+      title: 'Dreamidentity: Enhanced editability for efficient face-identity preserved image generation',
+      authors: 'Chen, Zhuowei; Fang, Shancheng; Liu, Wei; He, Qian; et al.',
+      venue: 'AAAI 2024',
+      year: '2024'
+    },
+    {
+      title: 'Pulid: Pure and lightning id customization via contrastive alignment',
+      authors: 'Guo, Zinan; Wu, Yanze; Zhuowei, Chen; Zhang, Peng; et al.',
+      venue: 'NeurIPS 2024',
+      year: '2024'
+    },
+    {
+      title: 'Ar-diffusion: Asynchronous video generation with auto-regressive diffusion',
+      authors: 'Sun, Mingzhen; Wang, Weining; Li, Gen; Liu, Jiawei; et al.',
+      venue: 'CVPR 2025',
+      year: '2025'
+    },
+    {
+      title: 'Anydressing: Customizable multi-garment virtual dressing via latent diffusion models',
+      authors: 'Li, Xinghui; Sun, Qichao; Zhang, Pengze; Ye, Fulong; et al.',
+      venue: 'CVPR 2025',
+      year: '2025'
+    },
+    {
+      title: 'Reganie: Rectifying gan inversion errors for accurate real image editing',
+      authors: 'Li, Bingchuan; Ma, Tianxiang; Zhang, Peng; Hua, Miao; et al.',
+      venue: 'AAAI 2023',
+      year: '2023'
+    },
+    {
+      title: 'Semantic 3d-aware portrait synthesis and manipulation based on compositional neural radiance field',
+      authors: 'Ma, Tianxiang; Li, Bingchuan; He, Qian; Dong, Jing; et al.',
+      venue: 'AAAI 2023',
+      year: '2023'
+    },
+    {
+      title: 'Region-aware face swapping',
+      authors: 'Xu, Chao; Zhang, Jiangning; Hua, Miao; He, Qian; et al.',
+      venue: 'CVPR 2022',
+      year: '2022'
+    },
+    {
+      title: 'Xmp-font: Self-supervised cross-modality pre-training for few-shot font generation',
+      authors: 'Liu, Wei; Liu, Fangyue; Ding, Fei; He, Qian; et al.',
+      venue: 'CVPR 2022',
+      year: '2022'
+    },
+    {
+      title: 'DyStyle: Dynamic neural network for multi-attribute-conditioned style editings',
+      authors: 'Li, Bingchuan; Cai, Shaofei; Liu, Wei; Zhang, Peng; et al.',
+      venue: 'WACV 2023',
+      year: '2023'
+    }
+  ];
+
   const projects = [
     {
       name: 'PuLID',
@@ -103,15 +196,15 @@ export default function Home() {
         </section>
 
         {/* Research Papers */}
-        <section className="mb-16">
+        <section className="mb-16" id="papers">
           <h2 className="text-lg font-medium mb-6">
             <a href="#papers" className="text-gray-800 hover:text-gray-600">
               Publications
             </a>
           </h2>
           <div className="border-t pt-6">
-            <p className="text-gray-600 mb-4">
-              For a complete list of publications, please visit my{' '}
+            <p className="text-gray-600 mb-6">
+              Selected publications. For a complete list, please visit my{' '}
               <a 
                 href="https://scholar.google.com/citations?hl=zh-CN&user=9rWWCgUAAAAJ&view_op=list_works&sortby=pubdate"
                 target="_blank"
@@ -122,6 +215,22 @@ export default function Home() {
               </a>
               {' '}profile.
             </p>
+            <div className="space-y-6">
+              {papers.map((paper, index) => (
+                <div key={index} className={`pb-6 ${index < papers.length - 1 ? 'border-b' : ''}`}>
+                  <h3 className="font-medium text-gray-900 mb-2">
+                    {paper.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-1">
+                    {paper.authors}
+                  </p>
+                  <p className="text-sm text-blue-600">
+                    {paper.venue}
+                    <span className="text-gray-500"> • {paper.year}</span>
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 

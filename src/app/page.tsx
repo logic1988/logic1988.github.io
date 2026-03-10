@@ -41,7 +41,7 @@ export default function Home() {
     },
     {
       name: 'DreamO',
-      description: '图像一致性模型',
+      description: '图像一致性',
       url: 'https://github.com/bytedance/DreamO',
       stars: 1700
     },
@@ -59,7 +59,7 @@ export default function Home() {
     },
     {
       name: 'USO',
-      description: '风格化+主体一致性生成',
+      description: '风格化一致性生成',
       url: 'https://github.com/bytedance/USO',
       stars: 1200
     },
@@ -95,7 +95,7 @@ export default function Home() {
     },
     {
       name: 'I2VControl',
-      description: '视频运动运镜控制通用方案',
+      description: '视频运动运镜控制',
       url: 'https://github.com/WanquanF/I2VControl-Camera',
       stars: 114
     }
@@ -464,10 +464,17 @@ export default function Home() {
 
   const currentDate = new Date().toISOString().split('T')[0];
 
+  const formatStars = (stars: number): string => {
+    if (stars >= 1000) {
+      return (stars / 1000).toFixed(1) + 'k';
+    }
+    return stars.toLocaleString();
+  };
+
   return (
     <div className="page">
       <header className="hero">
-        <h1><span style={{ fontWeight: 600 }}>HE</span> Qian</h1>
+        <h1><span style={{ fontWeight: 400 }}>HE</span> Qian</h1>
       </header>
 
       <section className="stats">
@@ -513,7 +520,7 @@ export default function Home() {
                       <div className="repo-desc">{project.description}</div>
                     </td>
                     <td className="repo-stars">
-                      {getProjectStars(project).toLocaleString()}
+                      {formatStars(getProjectStars(project))}
                     </td>
                   </tr>
                 ))}
@@ -523,7 +530,17 @@ export default function Home() {
         </section>
 
         <section className="panel">
-          <h2 className="panel-title">Publications</h2>
+          <h2 className="panel-title" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            Publications
+            <a 
+              href="https://scholar.google.com/citations?hl=zh-CN&user=9rWWCgUAAAAJ&view_op=list_works&sortby=pubdate"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: '#2f6bff', textDecoration: 'none', fontSize: '14px' }}
+            >
+              Google Scholar
+            </a>
+          </h2>
           <table className="paper-table">
             <tbody>
               {displayedPapers.map((paper, index) => (

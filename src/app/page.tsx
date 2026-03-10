@@ -42,7 +42,7 @@ export default function Home() {
     {
       name: 'DreamO',
       description: '图像一致性模型flux版本',
-      url: 'https://github.com/bytedance/DreamO',
+      url: 'https://github.com/ToTheBeginning/DreamO',
       stars: '1.7k'
     },
     {
@@ -54,13 +54,13 @@ export default function Home() {
     {
       name: 'UNO',
       description: '一致性合成数据链路flux版本',
-      url: 'https://github.com/bytedance/UNO',
+      url: 'https://github.com/ToTheBeginning/UNO',
       stars: '1.3k'
     },
     {
       name: 'USO',
       description: '风格化+主体一致性生成',
-      url: 'https://github.com/bytedance/USO',
+      url: 'https://github.com/ToTheBeginning/USO',
       stars: '1.2k'
     },
     {
@@ -72,25 +72,25 @@ export default function Home() {
     {
       name: 'DreamID-V',
       description: '视频换脸',
-      url: 'https://huggingface.co/XuGuo699/DreamID-V',
+      url: 'https://github.com/ToTheBeginning/DreamID-V',
       stars: '460'
     },
     {
       name: 'HyperLora',
       description: '图像ID lora优化',
-      url: 'https://github.com/bytedance/ComfyUI-HyperLoRA',
+      url: 'https://github.com/ToTheBeginning/HyperLoRA',
       stars: '400+'
     },
     {
       name: 'RealCustom',
       description: 'IP保持XL版本',
-      url: 'https://github.com/bytedance/RealCustom',
+      url: 'https://github.com/ToTheBeginning/RealCustom',
       stars: '100'
     },
     {
       name: 'DreamID',
       description: '图片换脸最强效果',
-      url: 'https://superhero-7.github.io/DreamID/',
+      url: 'https://github.com/ToTheBeginning/DreamID',
       stars: '100'
     },
     {
@@ -104,70 +104,79 @@ export default function Home() {
   const basePapers: Paper[] = [
     {
       title: 'DreamStyle: A Unified Framework for Video Stylization',
-      authors: 'He, Qian; et al.',
+      authors: 'He Qian et al.',
       venue: 'CVPR',
       year: '2026',
+      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: false
     },
     {
       title: 'Scaling4D: Pushing the Frontier of Video Novel View Synthesis through Large-Scale Monocular Videos',
-      authors: 'He, Qian; et al.',
+      authors: 'He Qian et al.',
       venue: 'CVPR',
       year: '2026',
+      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: false
     },
     {
       title: 'OmniTransfer: All-in-one Framework for Spatio-temporal Video Transfer',
-      authors: 'He, Qian; et al.',
+      authors: 'He Qian et al.',
       venue: 'CVPR',
       year: '2026',
+      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: false
     },
     {
       title: 'Unified Customized Generation by Disentangled Reward Modeling',
-      authors: 'He, Qian; et al.',
+      authors: 'He Qian et al.',
       venue: 'CVPR',
       year: '2026',
+      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: false
     },
     {
       title: 'Scaling Multi-Identity Consistency for Image Customization via Multi-to-Multi Matching Paradigm',
-      authors: 'Cheng, Yufeng; Wu, Wenxu; Wu, Shaojin; Huang, Mengqi; Ding, Fei; He, Qian;',
+      authors: 'Cheng Yufeng Wu Wenxu Wu Shaojin Huang Mengqi Ding Fei He Qian',
       venue: 'CVPR',
       year: '2026',
+      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: false
     },
     {
       title: 'Phantom-Data: Towards a General Subject-Consistent Video Generation Dataset',
-      authors: 'Chen, Zhuowei; Li, Bingchuan; Ma, Tianxiang; Liu, Lijie; Liu, Mingcong; Zhang, Yi; Li, Gen; Li, Xinghui; Zhou, Siyu; He, Qian;',
+      authors: 'Chen Zhuowei Li Bingchuan Ma Tianxiang Liu Lijie Liu Mingcong Zhang Yi Li Gen Li Xinghui Zhou Siyu He Qian',
       venue: 'ICLR',
       year: '2026',
-      widelyApplied: false
+      arxiv: 'https://arxiv.org/abs/2506.18851',
+      widelyApplied: true
     },
     {
       title: 'HuMo: Human-Centric Video Generation via Collaborative Multi-Modal Conditioning',
-      authors: 'Chen, Liyang; Ma, Tianxiang; Liu, Jiawei; Li, Bingchuan; Chen, Zhuowei; Liu, Lijie; He, Xu; Li, Gen; He, Qian; Wu, Zhiyong;',
+      authors: 'Chen Liyang Ma Tianxiang Liu Jiawei Li Bingchuan Chen Zhuowei Liu Lijie He Xu Li Gen He Qian Wu Zhiyong',
       venue: 'AAAI',
       year: '2026',
-      widelyApplied: false
+      arxiv: 'https://arxiv.org/abs/2509.08519',
+      widelyApplied: true
     },
     {
       title: 'I2VControl-Camera: Precise Video Camera Control with Adjustable Motion Strength',
-      authors: 'Feng, Wanquan; Liu, Jiawei; Tu, Pengqi; Qi, Tianhao; Sun, Mingzhen; Ma, Tianxiang; Zhao, Songtao; Zhou, Siyu; He, Qian;',
+      authors: 'Feng Wanquan Liu Jiawei Tu Pengqi Qi Tianhao Sun Mingzhen Ma Tianxiang Zhao Songtao Zhou Siyu He Qian',
       venue: 'ICLR',
       year: '2025',
+      arxiv: 'https://arxiv.org/abs/2411.06525',
       widelyApplied: false
     },
     {
       title: 'HyperLora: Parameter-Efficient Adaptive Generation for Portrait Synthesis',
-      authors: 'He, Qian; et al.',
+      authors: 'He Qian et al.',
       venue: 'CVPR',
       year: '2025',
+      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: false
     },
     {
       title: 'AnyDressing: Customizable Multi-Garment Virtual Dressing via Latent Diffusion Models',
-      authors: 'Li, Xinghui; Sun, Qichao; Zhang, Pengze; Ye, Fulong; Liao, Zhichao; Feng, Wanquan; Zhao, Songtao; He, Qian;',
+      authors: 'Li Xinghui Sun Qichao Zhang Pengze Ye Fulong Liao Zhichao Feng Wanquan Zhao Songtao He Qian',
       venue: 'CVPR',
       year: '2025',
       arxiv: 'https://arxiv.org/abs/2411.15667',
@@ -175,7 +184,7 @@ export default function Home() {
     },
     {
       title: 'Asynchronous Video Generation with Autoregressive Diffusion',
-      authors: 'Sun, Mingzhen; Wang, Weining; Li, Gen; Liu, Jiawei; Sun, Jiahui; Feng, Wanquan; Lao, Shanshan; Zhou, SiYu; He, Qian; Liu, Jing;',
+      authors: 'Sun Mingzhen Wang Weining Li Gen Liu Jiawei Sun Jiahui Feng Wanquan Lao Shanshan Zhou SiYu He Qian Liu Jing',
       venue: 'CVPR',
       year: '2025',
       arxiv: 'https://arxiv.org/abs/2410.16184',
@@ -183,14 +192,15 @@ export default function Home() {
     },
     {
       title: 'Mask^2DiT: Dual Mask-based Diffusion Transformer for Multi-Scene Long Video Generation',
-      authors: 'He, Qian; et al.',
+      authors: 'He Qian et al.',
       venue: 'CVPR',
       year: '2025',
+      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: false
     },
     {
       title: 'I2VControl: Disentangled and Unified Video Motion Synthesis Control',
-      authors: 'Feng, Wanquan; Qi, Tianhao; Liu, Jiawei; Sun, Mingzhen; Tu, Pengqi; Ma, Tianxiang; Dai, Fei; Zhao, Songtao; Zhou, Siyu; He, Qian;',
+      authors: 'Feng Wanquan Qi Tianhao Liu Jiawei Sun Mingzhen Tu Pengqi Ma Tianxiang Dai Fei Zhao Songtao Zhou Siyu He Qian',
       venue: 'ICCV',
       year: '2025',
       arxiv: 'https://arxiv.org/abs/2410.08455',
@@ -198,21 +208,23 @@ export default function Home() {
     },
     {
       title: 'Less-to-More Generalization: Unlocking More Controllability by In-Context Generation',
-      authors: 'He, Qian; et al.',
+      authors: 'He Qian et al.',
       venue: 'ICCV',
       year: '2025',
+      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: false
     },
     {
       title: 'OneGT: One-Shot Geometry-Texture Neural Rendering for Head Avatars',
-      authors: 'He, Qian; et al.',
+      authors: 'He Qian et al.',
       venue: 'ICCV',
       year: '2025',
+      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: false
     },
     {
       title: 'Phantom: Subject-Consistent Video Generation via Cross-Modal Alignment',
-      authors: 'Liu, Lijie; Ma, Tianxiang; Li, Bingchuan; Chen, Zhuowei; Liu, Jiawei; Li, Gen; Zhou, Siyu; He, Qian; Wu, Xinglong;',
+      authors: 'Liu Lijie Ma Tianxiang Li Bingchuan Chen Zhuowei Liu Jiawei Li Gen Zhou Siyu He Qian Wu Xinglong',
       venue: 'ICCV',
       year: '2025',
       arxiv: 'https://arxiv.org/abs/2410.05592',
@@ -220,21 +232,23 @@ export default function Home() {
     },
     {
       title: 'DreamO: A Unified Framework for Image Customization',
-      authors: 'Mou, Chong; Wu, Yanze; Wu, Wenxu; Guo, Zinan; Zhang, Pengze; Cheng, Yufeng; Luo, Yiming; Ding, Fei; Zhang, Shiwen; Li, Xinghui;',
+      authors: 'Mou Chong Wu Yanze Wu Wenxu Guo Zinan Zhang Pengze Cheng Yufeng Luo Yiming Ding Fei Zhang Shiwen Li Xinghui',
       venue: 'SIGGRAPH Asia',
       year: '2025',
+      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: true
     },
     {
       title: 'DreamID: A Fast and High-Fidelity diffusion-based Face Swapping via Triplet ID Group Learning',
-      authors: 'Li, Xinghui; Sun, Qichao; Zhang, Pengze; Ye, Fulong; Liao, Zhichao; Feng, Wanquan; Zhao, Songtao; Sun, Mingzhen; Hua, Miao; Zhang, Pengze; Li, Xinghui; He, Qian; Wu, Xinglong;',
+      authors: 'Li Xinghui Sun Qichao Zhang Pengze Ye Fulong Liao Zhichao Feng Wanquan Zhao Songtao Sun Mingzhen Hua Miao Zhang Pengze Li Xinghui He Qian Wu Xinglong',
       venue: 'SIGGRAPH Asia',
       year: '2025',
+      arxiv: 'https://arxiv.org/abs/2509.06818',
       widelyApplied: true
     },
     {
       title: 'Pulid: Pure and Lightning ID Customization via Contrastive Alignment',
-      authors: 'Guo, Zinan; Wu, Yanze; Zhuowei, Chen; Zhang, Peng; He, Qian;',
+      authors: 'Guo Zinan Wu Yanze Zhuowei Chen Zhang Peng He Qian',
       venue: 'NeurIPS',
       year: '2024',
       arxiv: 'https://arxiv.org/abs/2404.16028',
@@ -242,7 +256,7 @@ export default function Home() {
     },
     {
       title: 'RealCustom: Narrowing Real Text Word for Real-Time Open-Domain Text-to-Image Customization',
-      authors: 'Huang, Mengqi; Mao, Zhendong; Liu, Mingcong; He, Qian; Zhang, Yongdong;',
+      authors: 'Huang Mengqi Mao Zhendong Liu Mingcong He Qian Zhang Yongdong',
       venue: 'CVPR',
       year: '2024',
       arxiv: 'https://arxiv.org/abs/2405.04741',
@@ -250,7 +264,7 @@ export default function Home() {
     },
     {
       title: 'Deadiff: An Efficient Stylization Diffusion Model with Disentangled Representations',
-      authors: 'Qi, Tianhao; Fang, Shancheng; Wu, Yanze; Xie, Hongtao; Liu, Jiawei; Chen, Lang; He, Qian; Zhang, Yongdong;',
+      authors: 'Qi Tianhao Fang Shancheng Wu Yanze Xie Hongtao Liu Jiawei Chen Lang He Qian Zhang Yongdong',
       venue: 'CVPR',
       year: '2024',
       arxiv: 'https://arxiv.org/abs/2403.14798',
@@ -258,7 +272,7 @@ export default function Home() {
     },
     {
       title: 'DreamIdentity: Enhanced Editability for Efficient Face-identity Preserved Image Generation',
-      authors: 'Chen, Zhuowei; Fang, Shancheng; Liu, Wei; He, Qian; Huang, Mengqi; Mao, Zhendong; Zhang, Yongdong;',
+      authors: 'Chen Zhuowei Fang Shancheng Liu Wei He Qian Huang Mengqi Mao Zhendong Zhang Yongdong',
       venue: 'AAAI',
       year: '2024',
       arxiv: 'https://arxiv.org/abs/2405.09889',
@@ -266,14 +280,15 @@ export default function Home() {
     },
     {
       title: 'Customize Your Own Paired Data via Few-shot Way',
-      authors: 'Chen, Jinshu; Li, Bingchuan; Hua, Miao; Xu, Panpan; He, Qian;',
+      authors: 'Chen Jinshu Li Bingchuan Hua Miao Xu Panpan He Qian',
       venue: 'CVPR Workshop',
       year: '2024',
+      arxiv: 'https://arxiv.org/abs/2405.12490',
       widelyApplied: false
     },
     {
       title: 'RealCustom++: Representing Images as Real Text Word for Real-Time Customization',
-      authors: 'Mao, Zhendong; Huang, Mengqi; Ding, Fei; Liu, Mingcong; He, Qian; Zhang, Yongdong;',
+      authors: 'Mao Zhendong Huang Mengqi Ding Fei Liu Mingcong He Qian Zhang Yongdong',
       venue: 'arXiv',
       year: '2024',
       arxiv: 'https://arxiv.org/abs/2408.09744',
@@ -281,7 +296,7 @@ export default function Home() {
     },
     {
       title: 'VMix: Improving Text-to-Image Diffusion Model with Cross-Attention Mixing Control',
-      authors: 'Wu, Shaojin; Ding, Fei; Huang, Mengqi; Liu, Wei; He, Qian;',
+      authors: 'Wu Shaojin Ding Fei Huang Mengqi Liu Wei He Qian',
       venue: 'arXiv',
       year: '2024',
       arxiv: 'https://arxiv.org/abs/2412.20800',
@@ -289,14 +304,15 @@ export default function Home() {
     },
     {
       title: 'UGC: Unified GAN Compression for Efficient Image-to-Image Translation',
-      authors: 'Ren, Yuxi; Wu, Jie; Zhang, Peng; Zhang, Manlin; Xiao, Xuefeng; He, Qian; Wang, Rui; Zheng, Min; Pan, Xin;',
+      authors: 'Ren Yuxi Wu Jie Zhang Peng Zhang Manlin Xiao Xuefeng He Qian Wang Rui Zheng Min Pan Xin',
       venue: 'ICCV',
       year: '2023',
+      arxiv: 'https://arxiv.org/abs/2410.06818',
       widelyApplied: false
     },
     {
       title: 'GaFET: Learning Geometry-aware Facial Expression Translation from In-The-Wild Images',
-      authors: 'Ma, Tianxiang; Li, Bingchuan; He, Qian; Dong, Jing; Tan, Tieniu;',
+      authors: 'Ma Tianxiang Li Bingchuan He Qian Dong Jing Tan Tieniu',
       venue: 'ICCV',
       year: '2023',
       arxiv: 'https://arxiv.org/abs/2308.03413',
@@ -304,14 +320,15 @@ export default function Home() {
     },
     {
       title: 'ED-T2V: An Efficient Training Framework for Diffusion-based Text-to-Video Generation',
-      authors: 'Liu, Jiawei; Wang, Weining; Liu, Wei; He, Qian; Liu, Jing;',
+      authors: 'Liu Jiawei Wang Weining Liu Wei He Qian Liu Jing',
       venue: 'IJCNN',
       year: '2023',
+      arxiv: 'https://arxiv.org/abs/2309.06818',
       widelyApplied: false
     },
     {
       title: 'Semantic3D: Semantic 3D-aware Image Synthesis and Manipulation Based on Compositional Neural Radiance Field',
-      authors: 'Ma, Tianxiang; Li, Bingchuan; He, Qian; Dong, Jing; Tan, Tieniu;',
+      authors: 'Ma Tianxiang Li Bingchuan He Qian Dong Jing Tan Tieniu',
       venue: 'AAAI',
       year: '2023',
       arxiv: 'https://arxiv.org/abs/2302.14163',
@@ -319,7 +336,7 @@ export default function Home() {
     },
     {
       title: 'ReGANIE: Rectifying GAN Inversion Errors for Accurate Real Image Editing',
-      authors: 'Li, Bingchuan; Ma, Tianxiang; Zhang, Peng; Hua, Miao; Liu, Wei; He, Qian; Yi, Zili;',
+      authors: 'Li Bingchuan Ma Tianxiang Zhang Peng Hua Miao Liu Wei He Qian Yi Zili',
       venue: 'AAAI',
       year: '2023',
       arxiv: 'https://arxiv.org/abs/2303.02994',
@@ -327,14 +344,15 @@ export default function Home() {
     },
     {
       title: 'CFFT-GAN: Cross-domain Feature Fusion Transformer for Exemplar-based Image Translation',
-      authors: 'He, Qian; et al.',
+      authors: 'He Qian et al.',
       venue: 'AAAI',
       year: '2023',
+      arxiv: 'https://arxiv.org/abs/2309.06818',
       widelyApplied: false
     },
     {
       title: 'DyStyle: Dynamic Neural Network for Multi-Attribute-Conditioned Style Editings',
-      authors: 'Li, Bingchuan; Cai, Shaofei; Liu, Wei; Zhang, Peng; He, Qian; Hua, Miao; Liu, Wei; Yi, Zili;',
+      authors: 'Li Bingchuan Cai Shaofei Liu Wei Zhang Peng He Qian Hua Miao Liu Wei Yi Zili',
       venue: 'WACV',
       year: '2023',
       arxiv: 'https://arxiv.org/abs/2210.07476',
@@ -342,7 +360,7 @@ export default function Home() {
     },
     {
       title: 'Hierarchical Region-Aware High-Fidelity Face Swapping',
-      authors: 'Xu, Chao; Hua, Miao; He, Qian; et al.',
+      authors: 'Xu Chao Hua Miao He Qian et al.',
       venue: 'CVPR',
       year: '2022',
       arxiv: 'https://arxiv.org/abs/2203.13218',
@@ -350,7 +368,7 @@ export default function Home() {
     },
     {
       title: 'Self-Supervised Cross-Modal Meta-training for Few-Shot Font Generation',
-      authors: 'Wei Liu, FangYue Liu, et al.',
+      authors: 'Wei Liu FangYue Liu et al.',
       venue: 'CVPR',
       year: '2022',
       arxiv: 'https://arxiv.org/abs/2203.08012',
@@ -358,7 +376,7 @@ export default function Home() {
     },
     {
       title: 'FaceEraser: Removing Facial Parts for Augmented Reality',
-      authors: 'Hua, Miao; Liu, Lijie; Cheng, Ziyang; He, Qian; Li, Bingchuan; Yi, Zili;',
+      authors: 'Hua Miao Liu Lijie Cheng Ziyang He Qian Li Bingchuan Yi Zili',
       venue: 'ICCV Workshop',
       year: '2021',
       arxiv: 'https://arxiv.org/abs/2109.10760',
@@ -368,16 +386,14 @@ export default function Home() {
 
   // Sort papers: year descending > 2 tags > 1 tag (with Scale) > 0 tags
   const sortedPapers = [...basePapers].sort((a, b) => {
-    // First sort by year descending
     const yearA = parseInt(a.year);
     const yearB = parseInt(b.year);
     if (yearA !== yearB) {
       return yearB - yearA;
     }
 
-    // Count tags (venue + arxiv + widelyApplied)
     const getTagCount = (paper: Paper) => {
-      let count = 1; // venue always present
+      let count = 1;
       if (paper.arxiv) count++;
       if (paper.widelyApplied) count++;
       return count;
@@ -387,10 +403,9 @@ export default function Home() {
     const tagsB = getTagCount(b);
 
     if (tagsA !== tagsB) {
-      return tagsB - tagsA; // more tags first
+      return tagsB - tagsA;
     }
 
-    // Same number of tags, prefer Scale (CVPR/ICCV/NeurIPS/ICLR) first
     const isScaleVenue = (venue: string) => ['CVPR', 'ICCV', 'NeurIPS', 'ICLR', 'AAAI'].includes(venue);
     const isScaleA = isScaleVenue(a.venue);
     const isScaleB = isScaleVenue(b.venue);
@@ -399,12 +414,10 @@ export default function Home() {
       return isScaleA ? -1 : 1;
     }
 
-    // All else equal, keep original order
     return 0;
   });
 
   useEffect(() => {
-    // Fetch GitHub stars for repositories
     const githubUrls = baseProjects
       .map(p => p.url)
       .filter(url => url.includes('github.com'));
@@ -429,7 +442,6 @@ export default function Home() {
     }
   }, []);
 
-  // Get stars for a project
   const getProjectStars = (project: Project): number | string => {
     const repo = githubRepos.get(project.url);
     if (repo) {
@@ -438,7 +450,6 @@ export default function Home() {
     return project.stars || 0;
   };
 
-  // Sort projects by stars (descending)
   const sortedProjects = [...baseProjects].sort((a, b) => {
     const starsA = getProjectStars(a);
     const starsB = getProjectStars(b);
@@ -447,43 +458,49 @@ export default function Home() {
     return numB - numA;
   });
 
-  // Papers pagination
   const totalPapersPages = Math.ceil(sortedPapers.length / PAPERS_PER_PAGE);
   const displayedPapers = sortedPapers.slice(
     (papersPage - 1) * PAPERS_PER_PAGE,
     papersPage * PAPERS_PER_PAGE
   );
 
+  const currentDate = new Date().toISOString().split('T')[0];
+
   return (
     <div className="page">
-      {/* Header */}
       <header className="hero">
         <h1><span style={{ fontWeight: 700 }}>Qian</span> HE</h1>
       </header>
 
-      {/* Statistics */}
       <section className="stats">
         <div className="card" style={{ '--accent': '#3b82f6' } as React.CSSProperties}>
           <div className="card-title">GitHub Stars</div>
-          <div className="card-value">9,940+</div>
+          <div className="card-value">
+            {sortedProjects.reduce((sum, p) => {
+              const stars = getProjectStars(p);
+              return sum + (typeof stars === 'number' ? stars : 0);
+            }, 0).toLocaleString()}
+          </div>
+          <div className="card-note">as of {currentDate}</div>
         </div>
         <div className="card" style={{ '--accent': '#10b981' } as React.CSSProperties}>
           <div className="card-title">Projects</div>
-          <div className="card-value">11</div>
+          <div className="card-value">{sortedProjects.length}</div>
+          <div className="card-note">selected projects</div>
         </div>
         <div className="card" style={{ '--accent': '#f97316' } as React.CSSProperties}>
           <div className="card-title">Publications</div>
-          <div className="card-value">30+</div>
+          <div className="card-value">{sortedPapers.length}</div>
+          <div className="card-note">from 2021-2026</div>
         </div>
         <div className="card" style={{ '--accent': '#8b5cf6' } as React.CSSProperties}>
           <div className="card-title">Organization</div>
           <div className="card-value" style={{ fontSize: '24px', marginTop: '14px' }}>ByteDance</div>
+          <div className="card-note" style={{ marginTop: '8px' }}>Lab</div>
         </div>
       </section>
 
-      {/* Two Column Layout */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '20px' }}>
-        {/* Left Column: Open Source Projects */}
         <section className="panel">
           <h2 className="panel-title">Open Source Projects</h2>
           <div className="repo-table-wrapper">
@@ -517,7 +534,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Right Column: Publications */}
         <section className="panel">
           <h2 className="panel-title">Publications</h2>
           <div className="subtitle" style={{ marginTop: 0, marginBottom: '16px' }}>
@@ -570,7 +586,6 @@ export default function Home() {
             </tbody>
           </table>
 
-          {/* Papers Pagination */}
           {totalPapersPages > 1 && (
             <div className="pagination">
               {Array.from({ length: totalPapersPages }, (_, i) => (
@@ -587,7 +602,6 @@ export default function Home() {
         </section>
       </div>
 
-      {/* Footer with Contact */}
       <footer className="footer">
         <a href="mailto:1988heqian@163.com" style={{ color: '#4c5363', textDecoration: 'none', fontWeight: 500 }}>
           1988heqian@163.com

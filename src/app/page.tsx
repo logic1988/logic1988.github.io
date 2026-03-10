@@ -474,7 +474,7 @@ export default function Home() {
   return (
     <div className="page">
       <header className="hero">
-        <h1><span style={{ fontWeight: 400 }}>HE</span> Qian</h1>
+        <h1><span style={{ fontWeight: 400 }}>HE</span> <span style={{ fontWeight: 400, marginLeft: '4px' }}>QIAN</span></h1>
       </header>
 
       <section className="stats">
@@ -497,8 +497,8 @@ export default function Home() {
         </div>
       </section>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '20px' }}>
-        <section className="panel">
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px' }}>
+        <section className="panel" style={{ gridColumn: 'span 2' }}>
           <h2 className="panel-title">Open Source Projects</h2>
           <div className="repo-table-wrapper">
             <table className="repo-table">
@@ -529,7 +529,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="panel">
+        <section className="panel" style={{ gridColumn: 'span 3' }}>
           <h2 className="panel-title">
             Publications
           </h2>

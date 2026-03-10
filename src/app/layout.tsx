@@ -8,15 +8,14 @@ export const metadata: Metadata = {
     template: '%s | HE Qian\'s Profile',
   },
   description:
-    'HE Qian - Researcher focusing on computer vision, video generation, and AI image processing.',
+    'HE Qian - Focus on Visual and Multimodal Generation and AI Applications.',
   keywords: [
     'HE Qian',
     'Computer Vision',
     'Video Generation',
-    'AI Research',
-    'Deep Learning',
-    'Image Processing',
-    'Machine Learning',
+    'Image Generation',
+    'Multimodal',
+    'AI Applications',
   ],
   authors: [{ name: 'HE Qian' }],
   generator: 'Next.js',
@@ -26,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'HE Qian\'s Profile',
     description:
-      'HE Qian - Researcher focusing on computer vision, video generation, and AI image processing.',
+      'HE Qian - Focus on Visual and Multimodal Generation and AI Applications.',
     url: 'https://logic1988.github.io',
     siteName: 'HE Qian\'s Profile',
     locale: 'en_US',

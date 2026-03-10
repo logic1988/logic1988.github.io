@@ -498,7 +498,7 @@ export default function Home() {
       </section>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px' }}>
-        <section className="panel" style={{ gridColumn: 'span 2' }}>
+        <section className="panel" style={{ gridColumn: 'span 1' }}>
           <h2 className="panel-title">Open Source Projects</h2>
           <div className="repo-table-wrapper">
             <table className="repo-table">
@@ -529,7 +529,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="panel" style={{ gridColumn: 'span 3' }}>
+        <section className="panel" style={{ gridColumn: 'span 2' }}>
           <h2 className="panel-title">
             Publications
           </h2>

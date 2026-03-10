@@ -215,8 +215,14 @@ body {
 .title-line {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
+}
+
+.title {
+  font-weight: 600;
+  flex: 1;
+  min-width: 0;
 }
 
 .paper-title {
@@ -240,6 +246,7 @@ body {
   color: #2f6bff;
   text-decoration: none;
   font-weight: 600;
+  flex-shrink: 0;
 }
 
 .arxiv:hover { text-decoration: underline; }

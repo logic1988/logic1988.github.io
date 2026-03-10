@@ -307,6 +307,7 @@ export default function Home() {
       authors: 'Ren Yuxi Wu Jie Zhang Peng Zhang Manlin Xiao Xuefeng He Qian Wang Rui Zheng Min Pan Xin',
       venue: 'ICCV',
       year: '2023',
+      arxiv: 'https://arxiv.org/abs/2309.09310',
       widelyApplied: false
     },
     {
@@ -491,7 +492,7 @@ export default function Home() {
         </div>
         <div className="card" style={{ '--accent': '#f97316' } as React.CSSProperties}>
           <div className="card-title">Publications</div>
-          <div className="card-value">{sortedPapers.length}</div>
+          <div className="card-value">{sortedPapers.length}+</div>
           <div className="card-note">from 2021-2026</div>
         </div>
       </section>
@@ -529,17 +530,20 @@ export default function Home() {
         </section>
 
         <section className="panel">
-          <h2 className="panel-title" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <h2 className="panel-title">
             Publications
+          </h2>
+          <div style={{ marginBottom: '16px', fontSize: '13px', color: '#6b7283' }}>
+            完整文章列表见{' '}
             <a 
               href="https://scholar.google.com/citations?hl=zh-CN&user=9rWWCgUAAAAJ&view_op=list_works&sortby=pubdate"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: '#2f6bff', textDecoration: 'none', fontSize: '14px' }}
+              style={{ color: '#2f6bff', textDecoration: 'none', fontWeight: 500 }}
             >
               Google Scholar
             </a>
-          </h2>
+          </div>
           <table className="paper-table">
             <tbody>
               {displayedPapers.map((paper, index) => (

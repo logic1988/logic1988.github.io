@@ -1,0 +1,353 @@
+[
+  {
+    "title": "Lance: Unified Multimodal Modeling by Multi-Task Synergy",
+    "authors": "Fengyi Fu, Mengqi Huang, Shaojin Wu, Yunsheng Jiang, Yufei Huo, Hao Li, Yinghang Song, Fei Ding, Jianzhu Guo, Qian He et al.",
+    "venue": "arXiv",
+    "year": "2026",
+    "arxiv": "https://arxiv.org/abs/2605.18678",
+    "homepage": "https://lance-project.github.io",
+    "github": "https://github.com/bytedance/Lance",
+    "huggingface": "https://huggingface.co/bytedance-research/Lance",
+    "widelyApplied": false
+  },
+  {
+    "title": "Seedance 2.0: Advancing Video Generation for World Complexity",
+    "authors": "Team Seedance et al.",
+    "venue": "Technical Report",
+    "year": "2026",
+    "pdf": "https://arxiv.org/pdf/2604.14148",
+    "widelyApplied": true
+  },
+  {
+    "title": "OmniFace: Bridging the Image-to-Video Gap for High-Fidelity Face Swapping via Diffusion Transformer",
+    "authors": "Xu Guo, Fulong Ye, Xinghui Li, Pengqi Tu, Pengze Zhang, Qichao Sun, Songtao Zhao, Xiangwang Hou, Qian He",
+    "venue": "ECCV",
+    "year": "2026",
+    "arxiv": "https://arxiv.org/abs/2601.01425",
+    "homepage": "https://guoxu1233.github.io/DreamID-V/",
+    "github": "https://github.com/bytedance/DreamID-V",
+    "widelyApplied": false
+  },
+  {
+    "title": "LibraGen: Playing a Balance Game in Subject-Driven Video Generation",
+    "authors": "Jiahao Zhu, Shanshan Lao, Lijie Liu, Gen Li, Tianhao Qi, Wei Han, Bingchuan Li, Fangfang Liu, Zhuowei Chen, Tianxiang Ma, Qian He, Yi Zhou, Xiaohua Xie",
+    "venue": "ECCV",
+    "year": "2026",
+    "arxiv": "https://arxiv.org/abs/2603.13506",
+    "homepage": "https://phantom-video.github.io/LibraGen/",
+    "github": "https://github.com/Phantom-video/LibraGen",
+    "huggingface": "https://huggingface.co/papers/2603.13506",
+    "widelyApplied": false
+  },
+  {
+    "title": "DreamStyle: A Unified Framework for Video Stylization",
+    "authors": "He Qian et al.",
+    "venue": "CVPR",
+    "year": "2026",
+    "arxiv": "https://arxiv.org/abs/2601.02785",
+    "github": "https://github.com/LemonSky1995/DreamStyle",
+    "widelyApplied": false
+  },
+  {
+    "title": "Scaling4D: Pushing the Frontier of Video Novel View Synthesis through Large-Scale Monocular Videos",
+    "authors": "Hongrui Cai, Junjie Luo, Zhihong Fu, Shengnan Zhu, Wenjiawei, Wanquan Feng, Songtao Zhao, Qian He",
+    "venue": "CVPR",
+    "year": "2026",
+    "homepage": "https://rainbowrui.github.io/scaling4d/",
+    "widelyApplied": false
+  },
+  {
+    "title": "OmniTransfer: All-in-one Framework for Spatio-temporal Video Transfer",
+    "authors": "He Qian et al.",
+    "venue": "arXiv",
+    "year": "2026",
+    "arxiv": "https://arxiv.org/abs/2601.14250",
+    "widelyApplied": false
+  },
+  {
+    "title": "USO: Unified Style Transfer and Subject-Driven Generation via Disentangled and Reward Learning",
+    "authors": "Shaojin Wu, Mengqi Huang, Yufeng Cheng, Wenxu Wu, Jiahe Tian, Yiming Luo, Fei Ding, Qian He",
+    "venue": "CVPR",
+    "year": "2026",
+    "arxiv": "https://arxiv.org/abs/2508.18966",
+    "homepage": "https://bytedance.github.io/USO/",
+    "github": "https://github.com/bytedance/USO",
+    "widelyApplied": false
+  },
+  {
+    "title": "UMO: Scaling Multi-Identity Consistency for Image Customization via Matching Reward",
+    "authors": "Yufeng Cheng, Wenxu Wu, Shaojin Wu, Mengqi Huang, Fei Ding, Qian He",
+    "venue": "CVPR",
+    "year": "2026",
+    "arxiv": "https://arxiv.org/abs/2509.06818",
+    "homepage": "https://bytedance.github.io/UMO/",
+    "github": "https://github.com/bytedance/UMO",
+    "widelyApplied": false
+  },
+  {
+    "title": "Phantom-Data: Towards a General Subject-Consistent Video Generation Dataset",
+    "authors": "Chen Zhuowei Li Bingchuan Ma Tianxiang Liu Lijie Liu Mingcong Zhang Yi Li Gen Li Xinghui Zhou Siyu He Qian",
+    "venue": "ICLR",
+    "year": "2026",
+    "arxiv": "https://arxiv.org/abs/2506.18851",
+    "widelyApplied": true
+  },
+  {
+    "title": "HuMo: Human-Centric Video Generation via Collaborative Multi-Modal Conditioning",
+    "authors": "Chen Liyang Ma Tianxiang Liu Jiawei Li Bingchuan Chen Zhuowei Liu Lijie He Xu Li Gen He Qian Wu Zhiyong",
+    "venue": "AAAI",
+    "year": "2026",
+    "arxiv": "https://arxiv.org/abs/2509.08519",
+    "widelyApplied": true
+  },
+  {
+    "title": "Seedance 1.5 pro: A Native Audio-Visual Joint Generation Foundation Model",
+    "authors": "Team Seedance et al.",
+    "venue": "Technical Report",
+    "year": "2025",
+    "pdf": "https://arxiv.org/pdf/2512.13507",
+    "widelyApplied": true
+  },
+  {
+    "title": "DreaMontage: Arbitrary Frame-Guided One-Shot Video Generation",
+    "authors": "Jiawei Liu, Junqiao Li, Jiangfan Deng, Gen Li, Siyu Zhou, Zetao Fang, Shanshan Lao, Zengde Deng, Jianing Zhu, Tingting Ma, Jiayi Li, Yunqiu Wang, Qian He, Xinglong Wu",
+    "venue": "Technical Report",
+    "year": "2025",
+    "arxiv": "https://arxiv.org/abs/2512.21252",
+    "homepage": "https://dreamontage.github.io/DreaMontage/",
+    "widelyApplied": true
+  },
+  {
+    "title": "Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model",
+    "authors": "ByteDance Seed",
+    "venue": "Technical Report",
+    "year": "2025",
+    "pdf": "https://seaweed.video/seaweed.pdf",
+    "homepage": "https://seaweed.video/",
+    "widelyApplied": true
+  },
+  {
+    "title": "I2VControl-Camera: Precise Video Camera Control with Adjustable Motion Strength",
+    "authors": "Feng Wanquan Liu Jiawei Tu Pengqi Qi Tianhao Sun Mingzhen Ma Tianxiang Zhao Songtao Zhou Siyu He Qian",
+    "venue": "ICLR",
+    "year": "2025",
+    "arxiv": "https://arxiv.org/abs/2411.06525",
+    "widelyApplied": false
+  },
+  {
+    "title": "HyperLora: Parameter-Efficient Adaptive Generation for Portrait Synthesis",
+    "authors": "He Qian et al.",
+    "venue": "CVPR",
+    "year": "2025",
+    "arxiv": "https://arxiv.org/abs/2503.16944",
+    "widelyApplied": false
+  },
+  {
+    "title": "AnyDressing: Customizable Multi-Garment Virtual Dressing via Latent Diffusion Models",
+    "authors": "Li Xinghui Sun Qichao Zhang Pengze Ye Fulong Liao Zhichao Feng Wanquan Zhao Songtao He Qian",
+    "venue": "CVPR",
+    "year": "2025",
+    "arxiv": "https://arxiv.org/abs/2412.04146",
+    "widelyApplied": false
+  },
+  {
+    "title": "AR-Diffusion: Asynchronous Video Generation with Auto-Regressive Diffusion",
+    "authors": "Sun Mingzhen Wang Weining Li Gen Liu Jiawei Sun Jiahui Feng Wanquan Lao Shanshan Zhou SiYu He Qian Liu Jing",
+    "venue": "CVPR",
+    "year": "2025",
+    "arxiv": "https://arxiv.org/abs/2503.07418",
+    "widelyApplied": false
+  },
+  {
+    "title": "Mask^2DiT: Dual Mask-based Diffusion Transformer for Multi-Scene Long Video Generation",
+    "authors": "He Qian et al.",
+    "venue": "CVPR",
+    "year": "2025",
+    "arxiv": "https://arxiv.org/abs/2503.19881",
+    "widelyApplied": false
+  },
+  {
+    "title": "I2VControl: Disentangled and Unified Video Motion Synthesis Control",
+    "authors": "Feng Wanquan Qi Tianhao Liu Jiawei Sun Mingzhen Tu Pengqi Ma Tianxiang Dai Fei Zhao Songtao Zhou Siyu He Qian",
+    "venue": "ICCV",
+    "year": "2025",
+    "arxiv": "https://arxiv.org/abs/2411.17765",
+    "widelyApplied": true
+  },
+  {
+    "title": "Less-to-More Generalization: Unlocking More Controllability by In-Context Generation",
+    "authors": "He Qian et al.",
+    "venue": "ICCV",
+    "year": "2025",
+    "arxiv": "https://arxiv.org/abs/2504.02160",
+    "widelyApplied": false
+  },
+  {
+    "title": "OneGT: One-Shot Geometry-Texture Neural Rendering for Head Avatars",
+    "authors": "He Qian et al.",
+    "venue": "ICCV",
+    "year": "2025",
+    "pdf": "https://openaccess.thecvf.com/content/ICCV2025/papers/Chen_OneGT_One-Shot_Geometry-Texture_Neural_Rendering_for_Head_Avatars_ICCV_2025_paper.pdf",
+    "widelyApplied": false
+  },
+  {
+    "title": "Phantom: Subject-Consistent Video Generation via Cross-Modal Alignment",
+    "authors": "Liu Lijie Ma Tianxiang Li Bingchuan Chen Zhuowei Liu Jiawei Li Gen Zhou Siyu He Qian Wu Xinglong",
+    "venue": "ICCV",
+    "year": "2025",
+    "arxiv": "https://arxiv.org/abs/2502.11079",
+    "widelyApplied": true
+  },
+  {
+    "title": "DreamO: A Unified Framework for Image Customization",
+    "authors": "Mou Chong Wu Yanze Wu Wenxu Guo Zinan Zhang Pengze Cheng Yufeng Luo Yiming Ding Fei Zhang Shiwen Li Xinghui",
+    "venue": "SIGGRAPH Asia",
+    "year": "2025",
+    "arxiv": "https://arxiv.org/abs/2504.16915",
+    "widelyApplied": true
+  },
+  {
+    "title": "DreamID: A Fast and High-Fidelity diffusion-based Face Swapping via Triplet ID Group Learning",
+    "authors": "Li Xinghui Sun Qichao Zhang Pengze Ye Fulong Liao Zhichao Feng Wanquan Zhao Songtao Sun Mingzhen Hua Miao Zhang Pengze Li Xinghui He Qian Wu Xinglong",
+    "venue": "SIGGRAPH Asia",
+    "year": "2025",
+    "arxiv": "https://arxiv.org/abs/2504.14509",
+    "widelyApplied": true
+  },
+  {
+    "title": "PuLID: Pure and Lightning ID Customization via Contrastive Alignment",
+    "authors": "Guo Zinan Wu Yanze Zhuowei Chen Zhang Peng He Qian",
+    "venue": "NeurIPS",
+    "year": "2024",
+    "arxiv": "https://arxiv.org/abs/2404.16022",
+    "widelyApplied": true
+  },
+  {
+    "title": "RealCustom: Narrowing Real Text Word for Real-Time Open-Domain Text-to-Image Customization",
+    "authors": "Huang Mengqi Mao Zhendong Liu Mingcong He Qian Zhang Yongdong",
+    "venue": "CVPR",
+    "year": "2024",
+    "arxiv": "https://arxiv.org/abs/2403.00483",
+    "widelyApplied": false
+  },
+  {
+    "title": "Deadiff: An Efficient Stylization Diffusion Model with Disentangled Representations",
+    "authors": "Qi Tianhao Fang Shancheng Wu Yanze Xie Hongtao Liu Jiawei Chen Lang He Qian Zhang Yongdong",
+    "venue": "CVPR",
+    "year": "2024",
+    "arxiv": "https://arxiv.org/abs/2403.06951",
+    "widelyApplied": false
+  },
+  {
+    "title": "DreamIdentity: Enhanced Editability for Efficient Face-identity Preserved Image Generation",
+    "authors": "Chen Zhuowei Fang Shancheng Liu Wei He Qian Huang Mengqi Mao Zhendong Zhang Yongdong",
+    "venue": "AAAI",
+    "year": "2024",
+    "arxiv": "https://arxiv.org/abs/2307.00300",
+    "widelyApplied": false
+  },
+  {
+    "title": "Customize Your Own Paired Data via Few-shot Way",
+    "authors": "Chen Jinshu Li Bingchuan Hua Miao Xu Panpan He Qian",
+    "venue": "CVPR Workshop",
+    "year": "2024",
+    "arxiv": "https://arxiv.org/abs/2405.12490",
+    "widelyApplied": false
+  },
+  {
+    "title": "RealCustom++: Representing Images as Real Text Word for Real-Time Customization",
+    "authors": "Mao Zhendong Huang Mengqi Ding Fei Liu Mingcong He Qian Zhang Yongdong",
+    "venue": "arXiv",
+    "year": "2024",
+    "arxiv": "https://arxiv.org/abs/2408.09744",
+    "widelyApplied": false
+  },
+  {
+    "title": "VMix: Improving Text-to-Image Diffusion Model with Cross-Attention Mixing Control",
+    "authors": "Wu Shaojin Ding Fei Huang Mengqi Liu Wei He Qian",
+    "venue": "arXiv",
+    "year": "2024",
+    "arxiv": "https://arxiv.org/abs/2412.20800",
+    "widelyApplied": true
+  },
+  {
+    "title": "UGC: Unified GAN Compression for Efficient Image-to-Image Translation",
+    "authors": "Ren Yuxi Wu Jie Zhang Peng Zhang Manlin Xiao Xuefeng He Qian Wang Rui Zheng Min Pan Xin",
+    "venue": "ICCV",
+    "year": "2023",
+    "arxiv": "https://arxiv.org/abs/2309.09310",
+    "widelyApplied": false
+  },
+  {
+    "title": "GaFET: Learning Geometry-aware Facial Expression Translation from In-The-Wild Images",
+    "authors": "Ma Tianxiang Li Bingchuan He Qian Dong Jing Tan Tieniu",
+    "venue": "ICCV",
+    "year": "2023",
+    "arxiv": "https://arxiv.org/abs/2308.03413",
+    "widelyApplied": false
+  },
+  {
+    "title": "ED-T2V: An Efficient Training Framework for Diffusion-based Text-to-Video Generation",
+    "authors": "Liu Jiawei Wang Weining Liu Wei He Qian Liu Jing",
+    "venue": "IJCNN",
+    "year": "2023",
+    "arxiv": "https://arxiv.org/abs/2309.06818",
+    "widelyApplied": false
+  },
+  {
+    "title": "Semantic3D: Semantic 3D-aware Image Synthesis and Manipulation Based on Compositional Neural Radiance Field",
+    "authors": "Ma Tianxiang Li Bingchuan He Qian Dong Jing Tan Tieniu",
+    "venue": "AAAI",
+    "year": "2023",
+    "arxiv": "https://arxiv.org/abs/2302.14163",
+    "widelyApplied": false
+  },
+  {
+    "title": "ReGANIE: Rectifying GAN Inversion Errors for Accurate Real Image Editing",
+    "authors": "Li Bingchuan Ma Tianxiang Zhang Peng Hua Miao Liu Wei He Qian Yi Zili",
+    "venue": "AAAI",
+    "year": "2023",
+    "arxiv": "https://arxiv.org/abs/2303.02994",
+    "widelyApplied": false
+  },
+  {
+    "title": "CFFT-GAN: Cross-domain Feature Fusion Transformer for Exemplar-based Image Translation",
+    "authors": "He Qian et al.",
+    "venue": "AAAI",
+    "year": "2023",
+    "arxiv": "https://arxiv.org/abs/2309.06818",
+    "widelyApplied": false
+  },
+  {
+    "title": "DyStyle: Dynamic Neural Network for Multi-Attribute-Conditioned Style Editings",
+    "authors": "Li Bingchuan Cai Shaofei Liu Wei Zhang Peng He Qian Hua Miao Liu Wei Yi Zili",
+    "venue": "WACV",
+    "year": "2023",
+    "arxiv": "https://arxiv.org/abs/2210.07476",
+    "widelyApplied": false
+  },
+  {
+    "title": "Hierarchical Region-Aware High-Fidelity Face Swapping",
+    "authors": "Xu Chao Hua Miao He Qian et al.",
+    "venue": "CVPR",
+    "year": "2022",
+    "arxiv": "https://arxiv.org/abs/2203.13218",
+    "widelyApplied": false
+  },
+  {
+    "title": "Self-Supervised Cross-Modal Meta-training for Few-Shot Font Generation",
+    "authors": "Wei Liu FangYue Liu et al.",
+    "venue": "CVPR",
+    "year": "2022",
+    "arxiv": "https://arxiv.org/abs/2203.08012",
+    "widelyApplied": false
+  },
+  {
+    "title": "FaceEraser: Removing Facial Parts for Augmented Reality",
+    "authors": "Hua Miao Liu Lijie Cheng Ziyang He Qian Li Bingchuan Yi Zili",
+    "venue": "ICCV Workshop",
+    "year": "2021",
+    "arxiv": "https://arxiv.org/abs/2109.10760",
+    "widelyApplied": false
+  }
+]

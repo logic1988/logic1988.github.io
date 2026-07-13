@@ -1,0 +1,100 @@
+[
+  {
+    "name": "PuLID",
+    "description": "人物ID保持插件",
+    "url": "https://github.com/ToTheBeginning/PuLID",
+    "stars": 3546,
+    "stars_updated_at": "2026-07-13"
+  },
+  {
+    "name": "DreamO",
+    "description": "图像一致性",
+    "url": "https://github.com/bytedance/DreamO",
+    "stars": 1650,
+    "stars_updated_at": "2026-07-13"
+  },
+  {
+    "name": "Phantom",
+    "description": "视频一致性",
+    "url": "https://github.com/Phantom-video/Phantom",
+    "stars": 1507,
+    "stars_updated_at": "2026-07-13"
+  },
+  {
+    "name": "UNO",
+    "description": "一致性合成数据链路",
+    "url": "https://github.com/bytedance/UNO",
+    "stars": 1359,
+    "stars_updated_at": "2026-07-13"
+  },
+  {
+    "name": "USO",
+    "description": "风格化一致性生成",
+    "url": "https://github.com/bytedance/USO",
+    "stars": 1224,
+    "stars_updated_at": "2026-07-13"
+  },
+  {
+    "name": "Humo",
+    "description": "多模态人物视频生成",
+    "url": "https://github.com/phantom-video/humo",
+    "stars": 1266,
+    "stars_updated_at": "2026-07-13"
+  },
+  {
+    "name": "DreamID-V",
+    "description": "视频换脸",
+    "url": "https://github.com/bytedance/DreamID-V",
+    "stars": 660,
+    "stars_updated_at": "2026-07-13"
+  },
+  {
+    "name": "HyperLora",
+    "description": "图像ID lora优化",
+    "url": "https://github.com/bytedance/ComfyUI-HyperLoRA",
+    "stars": 498,
+    "stars_updated_at": "2026-07-13"
+  },
+  {
+    "name": "RealCustom",
+    "description": "IP保持",
+    "url": "https://github.com/bytedance/RealCustom",
+    "stars": 97,
+    "stars_updated_at": "2026-07-13"
+  },
+  {
+    "name": "DreamID",
+    "description": "图片换脸",
+    "url": "https://github.com/superhero-7/DreamID",
+    "stars": 109,
+    "stars_updated_at": "2026-07-13"
+  },
+  {
+    "name": "I2VControl",
+    "description": "视频运动运镜控制",
+    "url": "https://github.com/WanquanF/I2VControl-Camera",
+    "stars": 113,
+    "stars_updated_at": "2026-07-13"
+  },
+  {
+    "name": "Lance",
+    "description": "统一多模态模型",
+    "url": "https://github.com/bytedance/Lance",
+    "stars": 1272,
+    "stars_updated_at": "2026-07-13"
+  },
+  {
+    "name": "LibraGen",
+    "description": "主体驱动视频生成",
+    "url": "https://github.com/Phantom-video/LibraGen",
+    "stars": 17,
+    "stars_updated_at": "2026-07-13"
+  },
+  {
+    "name": "DreamStyle",
+    "description": "视频风格化",
+    "url": "https://github.com/LemonSky1995/DreamStyle",
+    "stars": 123,
+    "stars_updated_at": "2026-07-13"
+  }
+]

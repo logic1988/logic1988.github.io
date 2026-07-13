@@ -117,10 +117,20 @@ body {
   font-size: 12px;
 }
 
-.grid {
+.content-grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  align-items: start;
+}
+
+.project-panel {
+  grid-column: span 1;
+  min-height: 1010px;
+}
+
+.publication-panel {
+  grid-column: span 2;
 }
 
 .panel {
@@ -145,7 +155,8 @@ body {
   border-collapse: collapse;
 }
 
-.repo-table thead th, .paper-table thead th {
+.repo-table thead th,
+.paper-note {
   text-align: left;
   font-size: 11px;
   letter-spacing: 1.6px;
@@ -156,14 +167,10 @@ body {
 }
 
 .repo-table tbody td, .paper-table tbody td {
-  padding: 12px 0;
+  padding: 8px 0;
   border-bottom: 1px solid var(--line);
   vertical-align: top;
   font-size: 14px;
-}
-
-.repo-title {
-  font-weight: 700;
 }
 
 .repo-desc {
@@ -194,13 +201,6 @@ body {
 
 .title { font-weight: 600; }
 
-.meta {
-  color: #7a8193;
-  font-weight: 400;
-  font-size: 12px;
-  margin-top: 4px;
-}
-
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
@@ -223,10 +223,6 @@ body {
   font-weight: 600;
   flex: 1;
   min-width: 0;
-}
-
-.paper-title {
-  font-weight: 600;
 }
 
 .badge {
